@@ -20,7 +20,9 @@ defined('YII_DEBUG') or define('YII_DEBUG',true);
 // specify how many levels of call stack should be shown in each log message
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 require_once($yii);
-Yii::createWebApplication($config)->run();?>
+Yii::createWebApplication($config)->run();
+?>
+
 <br>
 Отработало за <?=sprintf('%0.5f',Yii::getLogger()->getExecutionTime())?>с.
  Скушано памяти: <?=round(memory_get_peak_usage()/(1024*1024),2)."MB";

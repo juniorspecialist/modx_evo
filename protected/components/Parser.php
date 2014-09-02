@@ -62,7 +62,7 @@ class Parser {
      */
     public function parseSnippet(){
 
-        //$this->phxSnippet();
+        $this->phxSnippet();
 
         //$this->html = preg_replace('~\[\[(.*?)\]\]~', '', $this->html);
         //$this->html = preg_replace('~\[\!(.*?)\!\]~', '', $this->html);
@@ -118,29 +118,44 @@ class Parser {
      * он всегда отрабатывает первым среди всех сниппетов
      */
     public function phxSnippet(){
-        //find Phx snippet
-        if(preg_match_all('/\[\+phx:(.*?)\+\]/',$this->html,$matches)){
 
+        if(preg_match_all('/\[\+(.*?):(.*?)\+\]/',$this->html,$matches)){
+            //echo '<pre>'; print_r($matches);
+            //echo '<pre>'; print_r($replace);
+            //die();
             $find = array();
             $replace = array();
 
-            foreach($matches[1] as $index=>$stringCall){
-                $find[] = $matches[0][$index];
+            foreach($matches[0] as $index=>$stringCall){
+
+                echo $stringCall.'<br>';
+
+                $find[] = $stringCall;
                 $phx = new Phx($this->model,$stringCall);
                 $phx->html = $this->html;
                 $phx->action();
                 $replace[] =  $phx->result;
+
             }
-//            echo '<pre>'; print_r($matches[1]);
-//            echo '<pre>'; print_r($replace);
-//            die();
+            //echo '<pre>'; print_r($matches[1]);
+            //echo '<pre>'; print_r($replace);
+            die();
 
             $this->html = str_replace($find, $replace, $this->html);
             unset($find); unset($replace);
         }
 
+        //find Phx snippet
+        //if(preg_match_all('/\[\+phx:(.*?)\+\]/',$this->html,$matches)){
 
+        //}
+
+        //die();
     }
+
+    /*
+     * проверяем строку на вызов сниппета,чанка,
+     */
 
 
     /*

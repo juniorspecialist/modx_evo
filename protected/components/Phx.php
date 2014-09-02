@@ -180,7 +180,8 @@ class Phx extends Ditto {
 
     public function _t(){
         // PHx / MODx Tags
-        if ( preg_match_all('~\[(\+|\*|\()([^:\+\[\]]+)([^\[\]]*?)(\1|\))\]~s',$this->html, $matches)) {
+        //die($this->html);
+        if ( preg_match_all('~\[(\+|\*|\()([^:\+\[\]]+)([^\[\]]*?)(\1|\))\]~s',$this->callString, $matches)) {
 
             echo '<pre>'; print_r($matches); die();
 
@@ -250,103 +251,48 @@ class Phx extends Ditto {
 
         //несколько вариантов вызова сниппета
 
-        $this->html = preg_replace($this->safetags[0],$this->safetags[1],$this->html);
+        //$this->html = preg_replace($this->safetags[0],$this->safetags[1],$this->html);
 
 
-        $this->html = $this->_t($this->html);
+        //$this->html = $this->_t($this->html);
+
+
+        if (preg_match_all('~\[(\[|\!)(.*?)(\]|\!)\]~s',$this->callString, $matches)) {
+
+            //TODO значение параметров в условии может быть как тв-параметр, так и чанк и сниппет, надо дописать обработку значений параметров
+            //TODO +отдельный метод для обработки значений параметров
+            if(preg_match('/\[\+phx:/i',$this->callString)){
+                //распарсим параметры конструкции-условия
+                $this->rule_if_else();
+            }
+
+        }
+
+        die();
 
         preg_match_all('~\[(\+|\*|\()([^:\+\[\]]+)([^\[\]]*?|)(\1|\))\]~s', $this->html, $matches);
         if ($matches[0]) {
             $this->html = str_replace($matches[0], '', $this->html);
-            //$this->Log("Cleaning unsolved tags: \n" . implode("\n",$matches[2]) );
         }
 
         // Restore non-call characters in the template: [, ]
         $this->html = str_replace($this->safetags[1],$this->safetags[2],$this->html);
-        // Set template post-process hash
-        //$et = md5($this->html);
-        // If template has changed, parse it once more...
-        //$template = $this->Parse($this->html);
+    }
 
-        die($this->html);
-
-
-        if (preg_match_all('~\[(\[|\!)(.*?)(\]|\!)\]~s',$this->callString, $matches)) {
-            echo $this->callString.'<br>';
-            echo '<pre>'; print_r($matches);
-        }
-
-
-        //==========================================================================================
-
-
-
-
-//        $callParams = explode(':', $this->callString);
-//        foreach($callParams as $index=>$param){
-//
-//            if(preg_match('/=/',$param)){
-//
-//                $expl_data =explode('=', $param);
-//
-//                $this->{$expl_data[0]} = $expl_data[1];
-//            }
-//        }
-
-//        echo 'if='.$this->if.'<br>';
-//        echo 'is='.$this->is.'<br>';
-//        echo 'else='.$this->else.'<br>';
-//        echo 'then'.$this->then.'<br>';
-
-        //echo '<pre>'; print_r($str);// die();
-
-
-        /*
-        if(preg_match('/\[\+phx:/i',$this->callString)){
-            //строка вызова пример - [+phx:if=`Hyundai`:is=``:then=``:else=``+] [+phx:if=`сплит-система`:is=``:then=``:else=``+]
-            $this->callString = str_replace(array('[+phx:','+] '), '', $this->callString);
-            //echo $this->callString.'<br>';
-            //обработка значения IF
-            if(preg_match('/if=`(.*?)`/i', $this->callString, $if_list)){
-                //echo '<pre>'; print_r($if_list);
-                //if_list[1] - значение параметра для условия
-                //определим какой тип значения указан
-                //[*pagetitle*]-тип значения
-                if (preg_match_all('~\[\*(.*?)\*\]~', $if_list[1], $matches)) {
-                    //echo '<pre>'; print_r($matches);
-                    foreach($matches[1] as $param){
-                        //заменяем вызов чанка его содержимым
-                        if(!empty($this->model->{$param})){
-                            $this->if = str_replace('[*'.$param.'*]', $this->model->{$param}, $if_list[1]);
-                        }else{
-                            if(!empty($this->model->tv[$param])){
-                                $this->if = str_replace('[*'.$param.'*]', $this->model->tv[$param], $if_list[1]);
-                            }else{
-                                $this->if = str_replace('[*'.$param.'*]', '', $if_list[1]);
-                            }
-                        }
-
-                        $this->html = str_replace('[*'.$param.'*]', $this->model->tv->{$param}, $this->html);
-                    }
-                }
-
-                //echo 'if='.$this->if.'<br>';
-            }
-        }
-
+    /*
+     * определили вызов конструкции is_folder-обработка её параметров
+     */
+    public function rule_is_folder($string_rule){
         //другой случай, когда вызов сниппета-[*isfolder:is=`1`:then=`wara<br>`:is=``:then=`CO`:else=`COM 350/ 03`+]
-        if(preg_match('/\[\*(.*?):/i',$this->callString,$matches)){
-            echo '<pre>'; print_r($matches); die();
-            $this->callString = str_replace('+]', '', $this->callString);
-            echo ($this->callString);
-            $this->callString = preg_replace('/\[\*(.*?):/','',$this->callString);
-            if (preg_match_all('~\[\*(.*?)\*\]~', $this->callString, $matches)) {
-
+        if(preg_match('/isfolder/i',$string_rule,$matches)){
+            //echo '<pre>'; print_r($matches); die();
+            //$this->callString = str_replace('+]', '', $this->callString);
+            //echo ($this->callString);
+            //$this->callString = preg_replace('/\[\*(.*?):/','',$this->callString);
+            if (preg_match_all('~\[\*(.*?)\*\]~', $string_rule, $matches)) {
                 foreach($matches[1] as $param){
-
-                    //$
-
                     //заменяем вызов чанка его содержимым
+                    /*
                     if(!empty($this->model->{$param})){
                         $this->if = str_replace('[*'.$param.'*]', $this->model->{$param}, $this->callString);
                     }else{
@@ -357,95 +303,77 @@ class Phx extends Ditto {
                         }
                     }
 
-                    $this->html = str_replace('[*'.$param.'*]', $this->model->tv->{$param}, $this->html);
+                    $this->callString = str_replace('[*'.$param.'*]', $this->model->tv->{$param}, $this->callString);
+                    */
                 }
 
                 //echo $this->if.'<br>';
             }
         }
+    }
 
-        //обработка значения IS
-        if(preg_match('/is=`(.*?)`/i', $this->callString, $is_list)){
-            //echo '<pre>'; print_r($if_list);
-            //if_list[1] - значение параметра для условия
-            //определим какой тип значения указан
-            //[*pagetitle*]-тип значения
-            if (preg_match_all('~\[\*(.*?)\*\]~', $is_list[1], $matches)) {
-                //echo '<pre>'; print_r($matches);
-                foreach($matches[1] as $param){
-                    //заменяем вызов чанка его содержимым
-                    if(!empty($this->model->{$param})){
-                        $this->is = str_replace('[*'.$param.'*]', $this->model->{$param}, $is_list[1]);
-                    }else{
-                        if(!empty($this->model->tv[$param])){
-                            $this->is = str_replace('[*'.$param.'*]', $this->model->tv[$param], $is_list[1]);
-                        }else{
-                            $this->is = str_replace('[*'.$param.'*]', '', $is_list[1]);
-                        }
-                    }
+    /*
+     * определяем какое значение параметра объявлено и преобразовываем его в значение конечное
+     * значение может быть как-сниппет,чанк, тв-параметр, определяем и преобразовываем в конечное значение
+     */
+    public function parseValue(){
+        //параметр - вызов сниппет
 
-                    $this->html = str_replace('[*'.$param.'*]', $this->model->tv->{$param}, $this->html);
-                }
+
+
+        //параметр - вызов чанк
+
+
+
+        //параметр - тв-параметр документа
+    }
+
+    /*
+     * нашли вызов "if_else" конструкции, поэтому парсим параметры этой конструкции
+     */
+    public function rule_if_else(){
+        //строка вызова пример - [+phx:if=`Hyundai`:is=``:then=``:else=``+] [+phx:if=`сплит-система`:is=``:then=``:else=``+]
+        //$this->callString = str_replace(array('[+phx:','+] '), '', $this->callString);
+        $params = explode(':',$this->callString);
+
+        foreach($params as $param){
+
+            $param = trim($param);
+
+            //обработка значения IF
+            if(preg_match('/^if=`(.*?)`$/i', $param, $if_list)){
+                //echo '<pre>'; print_r($if_list);die();
+                //if_list[1] - значение параметра для условия
+                $this->if = $if_list[1];
+                echo 'if='.$this->if.'<br>';
             }
 
-            //echo 'is='.$this->is.'<br>';
-        }
-
-        //обработка значения THEN
-        if(preg_match('/then=`(.*?)`/i', $this->callString, $then_list)){
-            //echo '<pre>'; print_r($if_list);
-            //if_list[1] - значение параметра для условия
-            //определим какой тип значения указан
-            //[*pagetitle*]-тип значения
-            if (preg_match_all('~\[\*(.*?)\*\]~', $then_list[1], $matches)) {
-                //echo '<pre>'; print_r($matches);
-                foreach($matches[1] as $param){
-                    //заменяем вызов чанка его содержимым
-                    if(!empty($this->model->{$param})){
-                        $this->then = str_replace('[*'.$param.'*]', $this->model->{$param}, $then_list[1]);
-                    }else{
-                        if(!empty($this->model->tv[$param])){
-                            $this->then= str_replace('[*'.$param.'*]', $this->model->tv[$param], $then_list[1]);
-                        }else{
-                            $this->then = str_replace('[*'.$param.'*]', '', $then_list[1]);
-                        }
-                    }
-
-                    $this->html = str_replace('[*'.$param.'*]', $this->model->tv->{$param}, $this->html);
-                }
+            //обработка значения IS
+            if(preg_match('/^is=`(.*?)`$/i', $param, $is_list)){
+                //echo '<pre>'; print_r($is_list);
+                //if_list[1] - значение параметра для условия
+                $this->is = $is_list[1];
+                echo 'is='.$this->is.'<br>';
             }
 
-            //echo 'then='.$this->then.'<br>';
-        }
+            //обработка значения THEN
+            if(preg_match('/^then=`(.*?)`$/i', $param, $then_list)){
+                //echo '<pre>'; print_r($then_list);
+                //if_list[1] - значение параметра для условия
+                //определим какой тип значения указан
+                $this->then= $then_list[1];
 
-        //обработка значения ELSE
-        if(preg_match('/else=`(.*?)`/i', $this->callString, $else_list)){
-            //echo '<pre>'; print_r($if_list);
-            //if_list[1] - значение параметра для условия
-            //определим какой тип значения указан
-            //[*pagetitle*]-тип значения
-            if (preg_match_all('~\[\*(.*?)\*\]~', $else_list[1], $matches)) {
-                //echo '<pre>'; print_r($matches);
-                foreach($matches[1] as $param){
-                    //заменяем вызов чанка его содержимым
-                    if(!empty($this->model->{$param})){
-                        $this->else = str_replace('[*'.$param.'*]', $this->model->{$param}, $else_list[1]);
-                    }else{
-                        if(!empty($this->model->tv[$param])){
-                            $this->else= str_replace('[*'.$param.'*]', $this->model->tv[$param], $else_list[1]);
-                        }else{
-                            $this->else = str_replace('[*'.$param.'*]', '', $else_list[1]);
-                        }
-                    }
-
-                   $this->html = str_replace('[*'.$param.'*]', $this->model->tv->{$param}, $this->html);
-                }
+                echo 'then='.$this->then.'<br>';
+            }
+            //обработка значения ELSE
+            if(preg_match('/^else=`(.*?)`$/i', $param, $else_list)){
+                //echo '<pre>'; print_r($if_list);
+                //if_list[1] - значение параметра для условия
+                $this->else = $else_list[1];
+                echo 'else='.$this->else.'<br>';
             }
 
-            //echo 'else='.$this->else.'<br>';
         }
-
-        */
     }
     /*
        * список перменных получили, обработка входящих параметров и вывод реультата
