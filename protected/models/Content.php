@@ -37,7 +37,7 @@ class Content extends EMongoDocument {
 
 
     function collectionName(){
-        return 'content';
+        return 'Content';
     }
 
     public static function model($className=__CLASS__){
@@ -76,17 +76,49 @@ class Content extends EMongoDocument {
         return array(
             'EMongoTimestampBehaviour' => array(
                 'class' => 'EMongoTimestampBehaviour' // adds a nice create_time and update_time Mongodate to our docs
-            ));
+            ),
+
+            'TreeBehavior' => array(
+              'class' => 'ext.behaviors.XTreeBehavior',
+            ),
+        );
     }
 
     public function relations(){
         return array(
             //'author' => array('one','User','_id','on'=>'userId'),
             'tpl' => array('one','Template','id', 'on'=>'template'),
+            '//parent_doc'=>array('one','Content','id', 'on'=>'parent'),
 
             // Here we define the likes/dislikes relationships
             //'usersLiked' => array('many', 'User', '_id','on'=>'likes'),
             //'usersDisliked' => array('many', 'User','_id','on'=>'dislikes')
+            //'comments' => array('many','Comment','on' => '_id','articleId'),
+            //'parent' => array('one', 'Content', 'parent', 'on'=>'template'),
+            'children' => array('many', 'Content', 'parent', 'on'=>'id'),
+            //'childCount' => array('many', 'Content', 'parent', 'on'=>'childCount'),
         );
+    }
+
+    /*
+     * подсчитываем кол-во дочерних элементов
+     */
+    public function getChildCount(){
+
+        $count = 0;
+
+        //$count = count($this->children);
+
+        $childrens = $this->children;
+
+        if(!empty($childrens)){
+            foreach($childrens as $children){
+                $count++;
+            }
+        }else{
+            $count = 0;
+        }
+
+        return $count;
     }
 } 

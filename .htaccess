@@ -8,3 +8,2677 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # в противном случае перенаправляем запрос через index.php
 RewriteRule . index.php
+
+
+#RewriteRule ^ceny_na_reagenty_alfa_phos_dlja_promyvki_teploobmennikov\.html$ reagent_dlja_udalenija_otlozhenij_alfaphos.html  [R=301,L]
+#RewriteRule UGV25\.html$ ugv25.html  [R=301,L]
+#RewriteRule kotly_aogv_7,4\.html$ kotly_aogv_74.html  [R=301,L]
+#RewriteRule PFVU5800\.html$ pfvu5800.html  [R=301,L]
+#RewriteRule Swep\.html$ swep.html  [R=301,L]
+#RewriteRule analiz_jetilenglikolja\.html$ analiz_glikolya.html  [R=301,L]
+#RewriteRule analiz_teplonositelja\.html$ analiz_glikolya.html  [R=301,L]
+#RewriteRule impkilma\.html$ impklima.html  [R=301,L]
+#RewriteRule luchshaja_kompanija_Rossii_2010\.html$ luchshaja_kompanija_rossii_2010.html  [R=301,L]
+#RewriteRule montazh_kotlov_otoplenija\.html$ montazh_i_ustanovka_otopitelnyh_kotlov.html  [R=301,L]
+#RewriteRule montazh_sistem_ventiljacii\.html$ montazh_ventiljacii_moskva.html  [R=301,L]
+#RewriteRule montazh_ventiljacii\.html$ montazh_ventiljacii_moskva.html  [R=301,L]
+#RewriteRule nadezhnyj_montazh_ventiljacii_dlja_firm_i_organizacij\.html$ nadezhnyj_montazh_ventiljacii.html  [R=301,L]
+#RewriteRule ochistka_ot_kraski\.html$ udalenie_kraski.html  [R=301,L]
+#
+#RewriteRule CIP_mojka\.html$ cip_mojka.html  [R=301,L]
+#RewriteRule raschet_teploobmennikov\.html$ raschet_teploobmennika.html  [R=301,L]
+#RewriteRule servis_remont_obsluzhivanie_kotlov_baxi\.html$ baxi.html  [R=301,L]
+#RewriteRule servis_remont_obsluzhivanie_kotlov_buderus\.html$ buderus.html  [R=301,L]
+#RewriteRule servis_remont_obsluzhivanie_kotlov_viessmann\.html$ viessmann.html  [R=301,L]
+#RewriteRule suhi_gradirni\.html$ suhie_gradirni.html  [R=301,L]
+#RewriteRule teplii_dom_eco\.html$ teplii_dom_eko.html  [R=301,L]
+#RewriteRule vodogrejnye_kolonki_aogv\.html$ vodogrejnye_kotly_aogv.html  [R=301,L]
+#RewriteRule zhidkost_teplii_dom\.html$ teplii_dom.html  [R=301,L]
+#RewriteRule kanalizacionnie-nasosi\.html$ nasosy-grundfos-serii-sololift.html  [R=301,L]
+#RewriteRule sololift-wc\.html$ nasosy-grundfos-serii-sololift.html  [R=301,L]
+#RewriteRule grundfos-sololift\.html$ nasosy-grundfos-serii-sololift.html  [R=301,L]
+#RewriteRule ^lowara\.html$ nasosi_lowara.html  [R=301,L]
+#RewriteRule myagkaya-payka-s-gorelkoy-rems-blits\.html$ rems-blits.html  [R=301,L]
+#RewriteRule ^servis_system_otopleniya\.html$ obsluzhivanie-sistemy-otopleniya.html  [R=301,L]
+#RewriteRule raschet_proizvodstvennogo_osveschenia\.html$ /  [R=301,L]
+#
+#RewriteRule raschet_proizvodstvennogo_osveschenia\.html$ /  [R=301,L]
+#RewriteRule raschet_narujnogo_osveschenia\.html$ /  [R=301,L]
+#RewriteRule raschet_ulichnogo_osveschenia\.html$ /  [R=301,L]
+#RewriteRule metodi_rascheta_osveschenia\.html$ /  [R=301,L]
+#RewriteRule proektirovanie_osveschenia\.html$ /  [R=301,L]
+#RewriteRule raschet_svetodiodnogo_osveschenija\.html$ /  [R=301,L]
+#RewriteRule raschet_osveschennosti\.html$ /  [R=301,L]
+#RewriteRule raschet_osveschenia\.html$ /  [R=301,L]
+#RewriteRule raschet_iskustvennogo_osveschenia\.html$ /  [R=301,L]
+#RewriteRule ceni_na_svetodiodnoe_osveschenie\.html$ /  [R=301,L]
+#RewriteRule svetodiodnye_fonari_ulichnogo_osveschenija\.html$ /  [R=301,L]
+#RewriteRule svetodiodnie_sistemi_osveschenia\.html$ /  [R=301,L]
+#RewriteRule svetodiodnye_svetilniki_ulichnogo_osveschenija\.html$ /  [R=301,L]
+#RewriteRule svetodiodnie_projektori\.html$ /  [R=301,L]
+#RewriteRule svetodiodnie_lampi_osveschenia\.html$ /  [R=301,L]
+#RewriteRule svetodiodnie_lampi_dlja_doma\.html$ /  [R=301,L]
+#RewriteRule svetodiodnie_istochniki_sveta\.html$ /  [R=301,L]
+#RewriteRule svetodiodnoe_ulichnoe_osveschenie\.html$ /  [R=301,L]
+#RewriteRule svetodiodnoe_osveschenie\.html$ /  [R=301,L]
+#RewriteRule svetodiodnoe_osveschenie_pomewenij\.html$ /  [R=301,L]
+#RewriteRule svetodiodnoe_osveschenie_doma\.html$ /  [R=301,L]
+#RewriteRule svetodiodnoe_osveschenie_vitrin\.html$ /  [R=301,L]
+#RewriteRule svetodiodnoe_avarijnoe_osveschenie\.html$ /  [R=301,L]
+#RewriteRule svetodiodnaja_podsvetka\.html$ /  [R=301,L]
+#RewriteRule svetodiodnoe_osveschenie_potolka\.html$ /  [R=301,L]
+#RewriteRule promyshlennoe_svetodiodnoe_osveschenie\.html$ /  [R=301,L]
+#RewriteRule raschet_osvewenija_pomewenij\.html$ /  [R=301,L]
+#RewriteRule ustanovka_i_montazh_svetilnikov_v_podvesnoj_potolok\.html$ /  [R=301,L]
+#RewriteRule svetodiodnye_svetilniki_dlja_podvesnyh_potolkov\.html$ /  [R=301,L]
+#RewriteRule potolochnye_svetodiodnye_svetilniki_dlja_podvesnyh_potolkov\.html$ /  [R=301,L]
+#RewriteRule jenergosberegajuwie_svetilniki_dlja_podvesnyh_natjazhnyh_potolkov\.html$ /  [R=301,L]
+#RewriteRule tochechnye_i_vstraivaemye_svetilniki_dlja_podvesnogo_potolka\.html$ /  [R=301,L]
+#RewriteRule vstraivaemye_svetodiodnye_potolochnye_svetilniki\.html$ /  [R=301,L]
+#RewriteRule svetodiodnye_svetilniki_tipa_armstrong\.html$ /  [R=301,L]
+#RewriteRule vstraivaemyj_svetilnik_pod_armstrong\.html$ /  [R=301,L]
+#RewriteRule potolochnye_svetilniki_armstrong_dlja_podvesnogo_potolka\.html$ /  [R=301,L]
+#RewriteRule podvesnye_svetodiodnye_svetilniki_armstrong\.html$ /  [R=301,L]
+#RewriteRule lampy_dlja_potolka_armstrong\.html$ /  [R=301,L]
+#RewriteRule cena_na_svetilnik_armstrong\.html$ /  [R=301,L]
+#RewriteRule proektirovanie_elektricheskogo_osveschenia\.html$ /  [R=301,L]
+#RewriteRule perenos_tualeta\.html$ /  [R=301,L]
+#RewriteRule tualet_v_lubom_meste_doma\.html$ /  [R=301,L]
+#RewriteRule utilizaciya_shlamov\.html$ /  [R=301,L]
+#RewriteRule utilizaciya_medicinskih_othodov\.html$ /  [R=301,L]
+#RewriteRule utilizaciya_biologicheskih_othodov\.html$ /  [R=301,L]
+#RewriteRule otkachka_utilizaciya_masla\.html$ /  [R=301,L]
+#RewriteRule otkachka_septikov\.html$ /  [R=301,L]
+#RewriteRule otkachka_yam\.html$ /  [R=301,L]
+#RewriteRule dostavka_tehnicheskoy_vody\.html$ /  [R=301,L]
+#RewriteRule assenizaciya\.html$ /  [R=301,L]
+#RewriteRule arenda_ilososa\.html$ /  [R=301,L]
+#RewriteRule otkachka_kanalizacii\.html$ /  [R=301,L]
+#RewriteRule avarijnaya_kanalizacii\.html$ /  [R=301,L]
+#RewriteRule chistka_kanalizacii\.html$ /  [R=301,L]
+#RewriteRule promyvka_kanalizacii\.html$ /  [R=301,L]
+#RewriteRule zasor_kanalizacii\.html$ /  [R=301,L]
+#RewriteRule obslujivanie_kanalizacii\.html$ /  [R=301,L]
+#RewriteRule probivka_kanalizacii\.html$ /  [R=301,L]
+#RewriteRule prochistka_trub\.html$ /  [R=301,L]
+#RewriteRule prochistka_kanalizacii\.html$ /  [R=301,L]
+#RewriteRule ekspluataciya_kanalizacii\.html$ /  [R=301,L]
+#RewriteRule ochistka_detaley\.html$ /  [R=301,L]
+#RewriteRule ochistka_oborudovaniya\.html$ /  [R=301,L]
+#RewriteRule ochistka_ot_rjavchiny\.html$ /  [R=301,L]
+#RewriteRule otkachka_avtomoek\.html$ /  [R=301,L]
+#RewriteRule otkachka_ila\.html$ /  [R=301,L]
+#RewriteRule udalenie_kraski\.html$ /  [R=301,L]
+#RewriteRule udalenie_saji\.html$ /  [R=301,L]
+#RewriteRule utilizaciya_othodov\.html$ /  [R=301,L]
+#RewriteRule vyvoz_jbo\.html$ /  [R=301,L]
+#RewriteRule utilizaciya_soj\.html$ /  [R=301,L]
+#RewriteRule ^grundfos\.html$ vodjanye_nasosy_grundfos.html  [R=301,L]
+#RewriteRule ^kompleks-rabot-alfa-laval-po-obsluzhivaniyu-pto\.html$ kompleks_rabot_alfa_laval_po_obsluzhivaniju_pto.html  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m3\.html$ teploobmenniki-alfa-laval-m3  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m6_mfg\.html$ teploobmenniki-alfa-laval-m6-mfg  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m6_bfg\.html$ plastinchatye-teploobmenniki-alfa-laval-m6-bfg  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m6_fg\.html$ teploobmenniki-alfa-laval-m6-fg  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m10_bfg\.html$ teploobmenniki-alfa-laval-m10-bfg  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_10_bfm\.html$ teploobmenniki-alfa-laval-m10-bfm  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m10_mgf\.html$ teploobmenniki-alfa-laval-m10-mfg  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m10_mfm\.html$ teploobmenniki-alfa-laval-m10-mfm  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m10\.html$ plastinchatye-teploobmenniki-alfa-laval-m10  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m15_bfg\.html$ plastinchatye-teploobmenniki-alfa-laval-m15-bfg  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m15_bfm\.html$ plastinchatye-teploobmenniki-alfa-laval-m15-bfm  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m15_mfg\.html$ plastinchatye-teploobmenniki-alfa-laval-m15-mfg  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m15_mfm\.html$ plastinchatye-teploobmenniki-alfa-laval-m15-mfm  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m15\.html$ plastinchatye-teploobmenniki-alfa-laval-m15  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_t5\.html$ plastinchatye-teploobmenniki-alfa-laval-t5-mfg-i-bfg  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_t20\.html$ plastinchatyy-teploobmenniki-alfa-laval-t20  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_t2\.html$ plastinchatye-teploobmenniki-alfa-laval-t2  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_tl10\.html$ plastinchatye-teploobmenniki-alfa-laval-tl10  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m30\.html$ teploobmenniki-alfa-laval-m30  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m20\.html$ plastinchatye-teploobmenniki-alfa-laval-m20  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_tl3\.html$ teploobmenniki-plastinchatye-alfa-laval-tl3  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_tl6\.html$ teploobmenniki-alfa-laval-tl6  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_tl10_bfm\.html$ teploobmenniki-alfa-laval-tl10-bfm  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_ts20\.html$ teploobmenniki-alfa-laval-ts20  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_ts6\.html$ teploobmenniki-alfa-laval-ts6  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_cb27\.html$ teploobmenniki-alfa-laval-cb27  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_cb76\.html$ teploobmenniki-alfa-laval-cb76  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_cb52\.html$ teploobmenniki-alfa-laval-cb52  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_cb14\.html$ teploobmenniki-alfa-laval-cb14  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_m6\.html$ teploobmenniki-alfa-laval-m6  [R=301,L]
+#RewriteRule ^teploobmenniki_alfa_laval_servisnij_centr\.html$ servis-teploobmennikov-alfa-laval-v-zao-edinyy-servisnyy-tsentr [R=301,L]
+#
+#
+#RewriteRule ^zapravka-freonom-split-sistem\.html$ zapravka_condicionerov_freonom [R=301,L]
+#RewriteRule ^antibakterialnaya-ochistka-konditsionerov\.html$ antibakterialnaya-ochistka-konditsionerov  [R=301,L]
+#RewriteRule ^tseny-i-stoimost-ochistki-konditsionerov\.html$ ochistka_condicionerov  [R=301,L]
+#RewriteRule ^profilakticheskaya-chistka-konditsionerov\.html$ ochistka_condicionerov  [R=301,L]
+#RewriteRule ^prays-list-na-ochistku-konditsionerov\.html$ ochistka_condicionerov  [R=301,L]
+#RewriteRule ^uslugi-po-chistke-konditsionerov-v-moskve\.html$ ochistka_condicionerov  [R=301,L]
+#RewriteRule ^chistka-i-zapravka-konditsionerov-i-split-sistem\.html$ ochistka_condicionerov  [R=301,L]
+#RewriteRule ^chistka-bytovyh-i-domashnih-konditsionerov\.html$ ochistka_condicionerov  [R=301,L]
+#RewriteRule ^ochistka-i-dezinfektsiya-ispariteley-konditsionerov\.html$ antibakterialnaya-ochistka-konditsionerov  [R=301,L]
+#RewriteRule ^dozapravka-konditsionerov-freonom\.html$ zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^tseny-na-zapravku-freonom-konditsionerov-i-split-sistem\.html$zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^stoimost-zapravki-freonom-konditsionerov-i-split-sistem\.html$zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^zapravka-konditsionerov-hladagentom\.html$zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^zapravka-konditsionerov-freonom-v-moskve-i-podmoskove\.html$zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^zapravka-konditsionerov-v-zelenograde\.html$zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^zapravka-konditsionerov-v-lyubertsah-i-vyhino\.html$zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^bystraya-zapravka-konditsionerov-v-himkah\.html$zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^zapravka-konditsionerov-freonom-v-mytischah\.html$zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^zapravka-konditsionerov-v-vao-moskvy\.html$zapravka_condicionerov_freonom  [R=301,L]
+#RewriteRule ^zapravka-freonom-refrizheratorov\.html$zapravka-freonom-promyshlennyh-holodilnikov-i-holodilnyh-ustanovok  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-korolyove\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^tseny-i-stoimost-remonta-konditsionerov\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-lyubertsah\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-balashihe\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-schelkovo\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-svao-moskvy\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-neispravnostey-konditsionerov\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-split-sistem-konditsionerov\.html$   [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-marino\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-odintsovo\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-i-zapravka-konditsionerov\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-i-profilaktika-konditsionerov\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^prays-list-na-remont-konditsionerov\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-mytischah\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-vao-moskvy\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-podolske\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-konditsionerov-v-zelenograde\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^remont-sistem-konditsionirovaniya-vozduha\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^diagnostika-i-remont-konditsionerov\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^srochnyy-remont-konditsionerov-v-moskve\.html$ remont_kondicionerov  [R=301,L]
+#RewriteRule ^razovoe-i-ezhemesyachnoe-tehnicheskoe-obsluzhivanie-konditsionerov\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^razovoe-i-ezhemesyachnoe-tehnicheskoe-obsluzhivanie-konditsionerov\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^servisnoe-obsluzhivanie-konditsionerov-v-g-mytischi\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^tehnicheskoe-obsluzhivanie-sistem-konditsionirovaniya-vozduha\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^obsluzhivanie-konditsionerov-v-odintsovo\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^periodichnost-servisnogo-obsluzhivanie-konditsionerov\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^obsluzhivanie-i-zapravka-konditsionerov\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^stoimost-servisnyh-rabot-po-obsluzhivaniyu-konditsionerov\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^servisnyy-tsentr-konditsionerov-v-moskve\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^tehnicheskoe-obsluzhivanie-konditsionerov-i-split-sistem\.html$ prajs_list_na_servisnye_uslugi_po_kondicionirovaniju  [R=301,L]
+#RewriteRule ^prodazha-montazh-i-ustanovka-konditsionerov-v-podolske-i-scherbinke\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^prodazha-ustanovka-i-montazh-konditsionerov-v-lyubertsah-ot-nashey-kompanii\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-gorode-zheleznodorozhnyy-ot-zao-ests\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-v-odintsovo-i-kubinke\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-zelenograde:-montazh-ot-nashey-firmy\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-v-ramenskom-ot-kompanii-edinyy-servisnyy-tsentr\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-gorode-zhukovskiy-ot-zao-ests\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-i-montazh-split-sistem-v-balashihe\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-koroleve\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-v-gorode-elektrostal-ot-nashey-organizatsii\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-g-mytischi-ot-nashey-firmy\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-krasnogorske-i-nahabino-ot-kompanii-edinyy-servisnyy-tsentr\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-v-pushkino-i-krasnoarmeyske-ot-zao-ests\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-v-himkah-ot-spetsialistov-zao-ests\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-g-sergievom-posade-ot-nashih-ekspertov\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-v-pavlovskom-posade-dlya-vas\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-domodedovo\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-v-kolomne-ot-spetsialistov-zao-ests\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-schelkovo-ot-kompanii-edinyy-servisnyy-tsentr\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-orehovo-zuevo-i-elektrogorske\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-gorode-vidnoe\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-i-split-sistem-v-gorode-serpuhov-ot-nashey-firmy\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-v-g-lobnya\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^bystraya-ustanovka-i-montazh-konditsionerov-v-noginske-ot-nashey-organizatsii\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-i-split-sistem-v-chehove\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-i-split-sistem-v-stupino\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-i-montazh-split-sistem-v-butovo\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-g-dzerzhinskiy\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^prodazha-i-ustanovka-konditsionerov-v-ivanteevke\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-gorode-dmitrov-dlya-nashih-klientov\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^montazh-i-ustanovka-konditsionerov-i-split-sistem-v-g-egorevsk-i-voskresenske\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-solnechnogorske\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-dolgoprudnom\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-g-bronnitsy\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-sao-i-svao-v-g-moskva\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-szao-i-zvenigorode\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^prodazha-montazh-i-ustanovka-konditsionerov-i-split-sistem-na-yugo-zapade-yugo-vostoke-moskvy-i-v-zhulebino\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^prodazha-i-ustanovka-konditsionerov-v-marino\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-vao-g-moskvy\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-i-montazh-konditsionerov-v-moskovskoy-oblasti\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-g-reutove\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-mozhayske-dubne-i-aprelevke\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-ofis\.html$ ustanovka-konditsionerov-v-arendovannom-pomeschenii [R=301,L]
+#RewriteRule ^ustanovka-konditsionera-na-ventiliruemy-fasadah-zhilyh-domov-i-zdaniy\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionerov-v-dome-i-kottedzhe\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-konditsionera-v-komnate\.html$ montazh-i-ustanovka-konditsionerov-i-split-sistem-v-moskve [R=301,L]
+#RewriteRule ^ustanovka-domashnih-konditsionerov\.html$ montazh-i-ustanovka-bytovyh-konditsionerov
+#RewriteRule ^uslugi-po-montazhu-i-ustanovke-konditsionerov\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^aktsii-na-ustanovku-konditsionerov-ot-nashey-kompanii\.html$ skidki-na-ustanovku-konditsionerov-i-split-sistem-v-moskve-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^dostavka-i-ustanovka-konditsionerov-ot-kompanii-edinyy-servisnyy-tsentr\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^servis-po-montazhu-i-ustanovke-konditsionerov-ot-zao-ests\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^garantiya-na-montazh-i-ustanovku-split-sistem-i-konditsionerov-ot-nashey-kompanii\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^professionalnyy-kachestvennyy-montazh-i-ustanovka-konditsionerov-ot-zao-ests\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^zakazat-ustanovku-i-montazh-split-sistemy-i-konditsionera-v-moskve\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^standartnaya-i-nestandartnaya-ustanovka-i-montazh-konditsionerov-i-split-sistem\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^remont-i-ustanovka-konditsionerov\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^ustanovka-i-obsluzhivanie-konditsionerov\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^tseny-na-prodazhu-i-ustanovku-konditsionerov\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^kupite-konditsionery-s-ustanovkoy-v-moskve-v-kompanii-edinyy-servisnyy-tsentr\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^vybor-i-ustanovka-konditsionerov\.html$ prodazha-i-ustanovka-konditsionerov-i-split-sistem-ot-kompanii-edinyy-servisnyy-tsentr [R=301,L]
+#RewriteRule ^zao-ests---organizatsiya-po-montazhu-i-ustanovke-konditsionerov\.html$ luchshaya-firma-po-montazhu-konditsionerov-i-ustanovke-split-sistem-v-moskve----zao-ests [R=301,L]
+#RewriteRule ^nasha-kompaniya-po-ustanovke-i-montazhu-konditsionerov-zanimaet-verhnie-pozitsii-reytingov\.html$ luchshaya-firma-po-montazhu-konditsionerov-i-ustanovke-split-sistem-v-moskve----zao-ests [R=301,L]
+#RewriteRule ^vygodnye-tseny-na-montazh-i-ustanovku-multisplit-sistem\.html$ luchshaya-firma-po-montazhu-konditsionerov-i-ustanovke-split-sistem-v-moskve----zao-ests [R=301,L]
+#RewriteRule ^stoimost-montazhnyh-rabot-po-ustanovke-konditsionerov\.html$ luchshaya-firma-po-montazhu-konditsionerov-i-ustanovke-split-sistem-v-moskve----zao-ests [R=301,L]
+#RewriteRule ^tseny-na-ustanovku-konditsionerov-v-kvartiru\.html$ luchshaya-firma-po-montazhu-konditsionerov-i-ustanovke-split-sistem-v-moskve----zao-ests [R=301,L]
+#RewriteRule ^nedorogaya-ustanovka-i-deshevyy-montazh-split-sistem-i-konditsionerov-moskve\.html$ luchshaya-firma-po-montazhu-konditsionerov-i-ustanovke-split-sistem-v-moskve----zao-ests [R=301,L]
+#RewriteRule ^prays-list-na-montazh-i-ustanovku-konditsionerov\.html$ luchshaya-firma-po-montazhu-konditsionerov-i-ustanovke-split-sistem-v-moskve----zao-ests [R=301,L]
+#RewriteRule ^rastsenki-na-ustanovku-i-montazh-konditsionerov-i-split-sistem-ot-nashey-organizatsii\.html$ luchshaya-firma-po-montazhu-konditsionerov-i-ustanovke-split-sistem-v-moskve----zao-ests [R=301,L]
+#
+#
+#
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_t2b\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-t2b [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_m3\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-m3 [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_tl3b\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-tl3b [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_tl3p\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-tl3p [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_t5b\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-t5b [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_t5m\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-t5m [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_ts6m\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-ts6m [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_tl6b\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-tl6b [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_m6\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-m6 [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_m6m\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-m6m [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_m10b\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-m10b [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_m10m\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-m10m [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_tl10p\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-tl10p [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_m15b\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-m15b [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_m15m\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-m15m [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_ts20m\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-ts20m [R=301,L]
+#RewriteRule ^plastiny_alfa_laval_dlja_teploobmennika_model_mk15bw\.html$ plastiny-alfa-laval-dlya-teploobmennika-modeli-mk15bw [R=301,L]
+#RewriteRule ^plastiny_funke_fp04\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp04 [R=301,L]
+#RewriteRule ^plastiny_funke_fp08\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp08 [R=301,L]
+#RewriteRule ^plastiny_funke_fp05\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp05 [R=301,L]
+#RewriteRule ^plastiny_funke_fp09\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp09 [R=301,L]
+#RewriteRule ^plastiny_funke_fp14\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp14 [R=301,L]
+#RewriteRule ^plastiny_funke_fp20\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp20 [R=301,L]
+#RewriteRule ^plastiny_funke_fp10\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp10 [R=301,L]
+#RewriteRule ^plastiny_funke_fp16\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp16 [R=301,L]
+#RewriteRule ^plastiny_funke_fp22\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp22 [R=301,L]
+#RewriteRule ^plastiny_funke_fp19\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp19 [R=301,L]
+#RewriteRule ^plastiny_funke_fp205\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp205 [R=301,L]
+#RewriteRule ^plastiny_funke_fp31\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp31 [R=301,L]
+#RewriteRule ^plastiny_funke_fp40\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp40 [R=301,L]
+#RewriteRule ^plastiny_funke_fp50\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp50 [R=301,L]
+#RewriteRule ^plastiny_funke_fp71\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp71 [R=301,L]
+#RewriteRule ^plastiny_funke_fp42\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp42 [R=301,L]
+#RewriteRule ^plastiny_funke_fp62\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp62 [R=301,L]
+#RewriteRule ^plastiny_funke_fp82\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp82 [R=301,L]
+#RewriteRule ^plastiny_funke_fp112\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp112 [R=301,L]
+#RewriteRule ^plastiny_funke_fp41\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp41 [R=301,L]
+#RewriteRule ^plastiny_funke_fp60\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp60 [R=301,L]
+#RewriteRule ^plastiny_funke_fp80\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp80 [R=301,L]
+#RewriteRule ^plastiny_funke_fp405\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp405 [R=301,L]
+#RewriteRule ^plastiny_funke_fp70\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp70 [R=301,L]
+#RewriteRule ^plastiny_funke_fp100\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp100 [R=301,L]
+#RewriteRule ^plastiny_funke_fp130\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp130 [R=301,L]
+#RewriteRule ^plastiny_funke_fp81\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp81 [R=301,L]
+#RewriteRule ^plastiny_funke_fp120\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp120 [R=301,L]
+#RewriteRule ^plastiny_funke_fp160\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp160 [R=301,L]
+#RewriteRule ^plastiny_funke_fp190\.html$ plastiny-funke-dlya-teploobmennika-modeli-fp190 [R=301,L]
+#RewriteRule ^plastiny_funke_fp150\.html$ plastiny-funke-dlya-teploobme-etra-dlya-teploobmennika-modeli-et-7[R=301,L]
+#RewriteRule ^uplotneniya_etra_dlya_teploobmennika_modeli_et_07\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-07[R=301,L]
+#RewriteRule ^uplotneniya_etra_dlya_teploobmennika_modeli_et_8\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-8[R=301,L]
+#RewriteRule ^uplotneniya_etra_dlya_teploobmennika_modeli_et_81\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-81[R=301,L]
+#RewriteRule ^uplotneniya_etra_dlya_teploobmennika_modeli_et_86\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-86[R=301,L]
+#RewriteRule ^uplotneniya_etra_dlya_teploobmennika_modeli_et_08\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-08[R=301,L]
+#RewriteRule ^uplotneniya_etra_dlya_teploobmennika_modeli_et_041\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-041[R=301,L]
+#
+#RewriteRule ^uplotnenija_alfa_laval_dlja_t2b\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-t2b [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_m3\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-m3 [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_tl3b\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-tl3b [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_tl3p\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-tl3p [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_t5b\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-t5b [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_t5m\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-t5m [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_ts6m\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-ts6m [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_tl6b\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-tl6b [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_m6\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-m6 [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_m6m\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-m6m [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_m6mw\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-m6mw [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_m10b\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-m10b [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_m10b\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-m10m [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_m10bw\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-m10bw [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_tl10p\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-tl10p [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_m15b\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-m15b [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_m15m\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-m15m [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_mk15bw\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-mk15bw [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_ts20m\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-ts20m [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_t20bw\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-t20bw [R=301,L]
+#RewriteRule ^uplotnenija_alfa_laval_dlja_t20m\.html$ uplotneniya-alfa-laval-dlya-teploobmennika-modeli-t20m [R=301,L]
+#RewriteRule ^prokladki_uplotnenija_teploobmenniki_funke\.html$ prokladki-i-uplotneniya-dlya-teploobmennikov-funke [R=301,L]
+#RewriteRule ^prokladki_uplotnenija_teploobmenniki_swep_kupit\.html$ kupite-prokladki-i-uplotneniya-dlya-teploobmennikov-swep [R=301,L]
+#RewriteRule ^prokladki-i-uplotneniya-dlya-teploobmennikov-alfa-laval-m6\.html$ prokladki_uplotnenija_alfa_laval_m6 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_04\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-04 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_08\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-08 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_07\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-07 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_14\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-hh-14 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_20\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-20 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_19\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-19 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_21\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-21 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_22\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-22 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_47\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-47 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_42\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-42 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_62\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-62 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_86\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-86 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_110\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-110 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_43\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-43 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_65\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-65 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_100\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-100 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_130\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-130 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_152\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-152 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_220\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-220 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_113\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-113 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_81\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-81 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_121\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-121 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_188\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-188 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_251\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-251 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_145\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-145 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_210\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-210 [R=301,L]
+#RewriteRule ^uplotneniya_ridan_dlya_teplobmennika_nn_201\.html$ uplotneniya-dlya-teploobmennika-ridan-modeli-nn-201 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_n35\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-n35 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_sr2\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-sr2 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_h17\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-h17 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_u2\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-u2 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_t4\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-t4 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_tr1\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-tr1 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_q030\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-q030 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_q080\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-q080 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_a085\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-a085 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_j060\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-j060 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_j107\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-j107 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_b110\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-b110 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_b205\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-b205 [R=301,L]
+#RewriteRule ^uplotnenija_teploteks_dlya_teploobmennika_modeli_s380\.html$ uplotneniya-teploteks-dlya-teploobmennika-modeli-s380 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_04\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-04 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_08\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-08 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp05\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp05 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_09\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-09 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_14\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-14 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_20\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-20 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp10\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp10 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp16\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp16 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp22\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp22 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_19\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-19 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_205\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-205 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_31\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-31 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_40\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-40 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_50\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-50 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_71\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-71 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_42\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-42 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_62\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-62 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_82\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-82 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_112\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-112 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_41\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-41 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_60\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-60 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_80\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-80 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_405\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-405 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_70\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-70 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_100\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-100 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_130\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-130 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_81\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-81 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_120\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-120 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_160\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-160 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_190\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-190 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_150\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-150 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_200\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-200 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_250\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-250 [R=301,L]
+#RewriteRule ^uplotnenija_funke_dlya_modeli_teploobmennika_fp_300\.html$ uplotneniya-funke-dlya-teploobmennika-modeli-fp-300 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_200\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-200 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_250\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-250 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_300\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-300 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_330\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-330 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_430\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-430 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_081\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-081 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_120\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-120 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_160\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-160 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_190\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-190 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_0405\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-0405 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_070\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-070 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_100\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-100 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_130\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-130 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_0411\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-0411 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_0412\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-0412 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_062\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-062 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_065\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-065 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_080\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-080 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_082\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-082 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_0112\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-0112 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_0205\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-0205 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_031\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-031 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_040\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-040 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_042\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-042 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_050\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-050 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_071\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-071 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_019\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-019 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_013\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-013 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_018\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-018 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_010\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-010 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_014\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-014 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_016\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-016 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_020\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-020 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_022\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-022 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_004\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-004 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_008\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-008 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_113\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-113 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_145\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-145 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_18\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-18 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_188\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-188 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_201\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-201 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_21\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-21 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_22\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-22 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_35\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-35 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_37\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-37 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_38\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-38 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_4\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-4 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_41\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-41 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_42\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-42 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_43\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-43 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_47\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-47 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_04\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-04 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_62\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-62 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_64\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-64 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_65\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-65 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_7\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-7 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_07\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-07 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_8\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-8 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_81\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-81 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_86\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-86 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_08\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-08 [R=301,L]
+#RewriteRule ^uplotnenija_etra_dlya_teploobmennika_modeli_et_041\.html$ uplotneniya-etra-dlya-teploobmennika-modeli-et-041 [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-04\.html$ nn_04_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-08\.html$ nn_08_32_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-07\.html$ nn_07_ridan [R=301,L]
+#RewriteRule ^ceny_i_prajs_na_teploobmennikii_ridan_hh_14\.html$ nn_14_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-20\.html$ nn_20_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-19\.html$ nn_19_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-21\.html$ nn_21_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-22\.html$ nn_22_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-47\.html$ nn_47_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-42\.html$ nn_42_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-62\.html$ nn_62_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-86-du-150\.html$ nn_86_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-100-du-200\.html$ nn_110_ridan [R=301,L]
+#RewriteRule ^teploobmennikii_ridan_nn_43\.html$ nn_43_ridan [R=301,L]
+#RewriteRule ^teploobmennikii_ridan_nn_65\.html$ nn_65_ridan [R=301,L]
+#RewriteRule ^teploobmenniki_ridan_modeli_nn_100\.html$ nn_100_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-130-du-200\.html$ nn_130_ridan [R=301,L]
+#RewriteRule ^teploobmenniki_ridan_modeli_nn_152\.html$ teploobmennik-ridan-modeli-nn-152-du-200 [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-20\.html$ nn_220_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-113\.html$ nn_113_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-81-du-300\.html$ nn_81_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-121-du-300\.html$ nn_121_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-188-du-300\.html$ teploobmennik-ridan-modeli-nn-188-du-300 [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-251-du-300\.html$ nn_251_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-145-du-400\.html$ nn_145_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-210-du-400\.html$ nn_210_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-nn-201-du-500\.html$ nn_201_ridan [R=301,L]
+#RewriteRule ^teploobmennik-ridan-modeli-hh-41\.html$ nn_41_ridan [R=301,L]
+#RewriteRule ^obsluzhivanie-teploobmennikov-ridan\.html$ obsluzhivanie_teploobmennikiov_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-62\.html$ nn_62_ridan [R=301,L]
+#RewriteRule ^teploobmenniki-ridan-nn-62$ nn_62_ridan [R=301,L]
+#RewriteRule ^prokladki-i-uplotneniya-dlya-teploobmennikov-etra\.htm$ prokladki-i-uplotneniya-dlya-teploobmennikov-etra.html [R=301,L]
+#RewriteRule ^epdm\.html$ vse-prokladi-dlya-teploobmennikov [R=301,L]
+#RewriteRule ^katalog-tovarov-de-ditrich\.html$ katalog-prajs-tovarov-de-ditrich [R=301,L]
+#
+#
+## Rewrite domain.com -> www.domain.com -- used with SEO Strict URLs plugin
+#RewriteCond %{HTTP_HOST} .
+#RewriteCond %{HTTP_HOST} !^modx [NC]
+#RewriteRule (.*) http://modx/$1 [R=301,L]
+#
+#
+#
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)\.html[/]+$ $1.html [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=16$
+#RewriteRule ^pages\.php$ mcquay.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=15$
+#RewriteRule ^pages\.php$ frico.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=14$
+#RewriteRule ^pages\.php$ trox.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=13$
+#RewriteRule ^pages\.php$ york.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=12$
+#RewriteRule ^pages\.php$ ostberg.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=11$
+#RewriteRule ^pages\.php$ systemair.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=10$
+#RewriteRule ^pages\.php$ climaveneta.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=9$
+#RewriteRule ^pages\.php$ carrier.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=8$
+#RewriteRule ^pages\.php$ clivet.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=7$
+#RewriteRule ^pages\.php$ airwell.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=6$
+#RewriteRule ^pages\.php$ stulz.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=5$
+#RewriteRule ^pages\.php$ uniflair.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=4$
+#RewriteRule ^pages\.php$ wesper.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=3$
+#RewriteRule ^pages\.php$ galetti.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=1$
+#RewriteRule ^pages\.php$ aermec.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=33$
+#RewriteRule ^pages\.php$ danfoss.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=32$
+#RewriteRule ^pages\.php$ ebro.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=30$
+#RewriteRule ^pages\.php$ hawle.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=29$
+#RewriteRule ^pages\.php$ broen.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=28$
+#RewriteRule ^pages\.php$ oventrop.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=27$
+#RewriteRule ^pages\.php$ tecofi.html? [L,R=301]
+#
+#
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=24$
+#RewriteRule ^pages\.php$ ksb.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=23$
+#RewriteRule ^pages\.php$ calpeda.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=22$
+#RewriteRule ^pages\.php$ wilo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=21$
+#RewriteRule ^pages\.php$ grundfos.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=20$
+#RewriteRule ^pages\.php$ luve.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=19$
+#RewriteRule ^pages\.php$ gea.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=60$
+#RewriteRule ^pages\.php$ chofu.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=61$
+#RewriteRule ^pages\.php$ daire.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=18$
+#RewriteRule ^pages\.php$ ciat.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=62$
+#RewriteRule ^pages\.php$ shuft.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=59$
+#RewriteRule ^pages\.php$ carel.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=58$
+#RewriteRule ^pages\.php$ fondital.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=57$
+#RewriteRule ^pages\.php$ boneco.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=56$
+#RewriteRule ^pages\.php$ bionaire.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=55$
+#RewriteRule ^pages\.php$ biasi.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=54$
+#RewriteRule ^pages\.php$ belimo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=53$
+#RewriteRule ^pages\.php$ airedale.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=52$
+#RewriteRule ^pages\.php$ aircomfort.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=51$
+#RewriteRule ^pages\.php$ airoswiss.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=47$
+#RewriteRule ^pages\.php$ venterra.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=50$
+#RewriteRule ^pages\.php$ aereco.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=49$
+#RewriteRule ^pages\.php$ ascon.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=48$
+#RewriteRule ^pages\.php$ 2vv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=46$
+#RewriteRule ^pages\.php$ korf.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=45$
+#RewriteRule ^pages\.php$ vts.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=44$
+#RewriteRule ^pages\.php$ remak.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=43$
+#RewriteRule ^pages\.php$ vortice.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=42$
+#RewriteRule ^pages\.php$ impklima.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=41$
+#RewriteRule ^pages\.php$ honeywell.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=40$
+#RewriteRule ^pages\.php$ heimeier.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=37$
+#RewriteRule ^pages\.php$ generalclimate.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=36$
+#RewriteRule ^pages\.php$ gree.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=69$
+#RewriteRule ^pages\.php$ esbe.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=71$
+#RewriteRule ^pages\.php$ liebert.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=70$
+#RewriteRule ^pages\.php$ fuji.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=68$
+#RewriteRule ^pages\.php$ eliwell.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=65$
+#RewriteRule ^pages\.php$ devi.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=66$
+#RewriteRule ^pages\.php$ dwyers.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=64$
+#RewriteRule ^pages\.php$ delonghi.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=63$
+#RewriteRule ^pages\.php$ dantherm.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=93$
+#RewriteRule ^pages\.php$ vyhod_teploobmennikov_iz_stroja.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=88$
+#RewriteRule ^pages\.php$ himicheskie_sredstva_dlja_promyvki_teploobmennika.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=67$
+#RewriteRule ^pages\.php$ ecoquest.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=86$
+#RewriteRule ^pages\.php$ sroki_servisnogo_obsluzhivanie_teploobmennika.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=95$
+#RewriteRule ^pages\.php$ cip_mojka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=94$
+#RewriteRule ^pages\.php$ dlja_chego_ispolzujutsja_setchatye_filtry.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=85$
+#RewriteRule ^pages\.php$ osnovnye_sposoby_obsluzhivanija_teploobmennika.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=92$
+#RewriteRule ^pages\.php$ material_plastin_teploobmennika.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=91$
+#RewriteRule ^pages\.php$ ispolzovanie_teploobmennik_v_rezhime_isparenija_ili_v_kachestve_kondensatora.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=90$
+#RewriteRule ^pages\.php$ razbornyje_teploobmenniki_vs_pajanyje_teploobmenniki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=89$
+#RewriteRule ^pages\.php$ smeshivanije_zhidkostej_v_teploobmennike.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=87$
+#RewriteRule ^pages\.php$ ustrojstva_dlja_razborki_teploobmennika.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=84$
+#RewriteRule ^pages\.php$ zachem_sleduet_promyvat_teploobmennik.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=83$
+#RewriteRule ^pages\.php$ mozhno_li_obojtis_bez_servisnogo_obsluzhivanija_teploobmennika.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=82$
+#RewriteRule ^pages\.php$ voprosy_teploobmenniki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=80$
+#RewriteRule ^pages\.php$ korrozija_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=79$
+#RewriteRule ^pages\.php$ obslugivanie_kotelnih_zdania.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=78$
+#RewriteRule ^pages\.php$ obslugivanie_promishlennih_kotelnih.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=77$
+#RewriteRule ^pages\.php$ obslugivanie_kotelnih_vodoochistka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=76$
+#RewriteRule ^pages\.php$ obslugivanie_kotelnih_postavka_gaza_vodi_elektri4estva.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=75$
+#RewriteRule ^pages\.php$ obslugivanie_kotelnih_sboi_avtomatiki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=74$
+#RewriteRule ^pages\.php$ obslugivanie_kotelnih.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=448$
+#RewriteRule ^pages\.php$ kotly_aogv_74.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=101$
+#RewriteRule ^pages\.php$ kanalizacionnie_nasosi.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=100$
+#RewriteRule ^pages\.php$ perenos_tualeta.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=99$
+#RewriteRule ^pages\.php$ tualet_v_lubom_meste_doma.html? [L,R=301]
+#
+#
+#
+#
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=103$
+#RewriteRule ^pages\.php$ sauermann.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=123$
+#RewriteRule ^pages\.php$ utilizaciya_soj.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=122$
+#RewriteRule ^pages\.php$ utilizaciya_shlamov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=121$
+#RewriteRule ^pages\.php$ utilizaciya_medicinskih_othodov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=120$
+#RewriteRule ^pages\.php$ utilizaciya_biologicheskih_othodov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=119$
+#RewriteRule ^pages\.php$ otkachka_utilizaciya_masla.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=118$
+#RewriteRule ^pages\.php$ otkachka_septikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=117$
+#RewriteRule ^pages\.php$ otkachka_yam.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=116$
+#RewriteRule ^pages\.php$ dostavka_tehnicheskoy_vody.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=115$
+#RewriteRule ^pages\.php$ assenizaciya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=114$
+#RewriteRule ^pages\.php$ arenda_ilososa.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=113$
+#RewriteRule ^pages\.php$ otkachka_kanalizacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=112$
+#RewriteRule ^pages\.php$ avarijnaya_kanalizacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=111$
+#RewriteRule ^pages\.php$ chistka_kanalizacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=108$
+#RewriteRule ^pages\.php$ obslujivanie_kanalizacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=110$
+#RewriteRule ^pages\.php$ promyvka_kanalizacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=109$
+#RewriteRule ^pages\.php$ zasor_kanalizacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=107$
+#RewriteRule ^pages\.php$ probivka_kanalizacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=105$
+#RewriteRule ^pages\.php$ prochistka_trub.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=104$
+#RewriteRule ^pages\.php$ prochistka_kanalizacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=132$
+#RewriteRule ^pages\.php$ zapravka_condicionerov_freonom.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=130$
+#RewriteRule ^pages\.php$ obslujivanie_condicionerov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=131$
+#RewriteRule ^pages\.php$ ochistka_condicionerov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=129$
+#RewriteRule ^pages\.php$ obslujivanie_fancoilov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=126$
+#RewriteRule ^pages\.php$ epdm.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=128$
+#RewriteRule ^pages\.php$ obslujivanie_chillerov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=127$
+#RewriteRule ^pages\.php$ obslujivanie_system_condicionirovaniya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=137$
+#RewriteRule ^pages\.php$ disinfectant.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=136$
+#RewriteRule ^pages\.php$ ochistka_ventilyacii_3.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=135$
+#RewriteRule ^pages\.php$ ochistka_ventilyacii_2.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=134$
+#RewriteRule ^pages\.php$ ochistka_ventilyacii_1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=133$
+#RewriteRule ^pages\.php$ vent.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=143$
+#RewriteRule ^pages\.php$ disinfectant5.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=142$
+#RewriteRule ^pages\.php$ disinfectant4.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=140$
+#RewriteRule ^pages\.php$ disinfectant3.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=139$
+#RewriteRule ^pages\.php$ disinfectant2.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=138$
+#RewriteRule ^pages\.php$ disinfectant1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=170$
+#RewriteRule ^pages\.php$ filtry_dlja_sistem_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=169$
+#RewriteRule ^pages\.php$ ustanovka_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=168$
+#RewriteRule ^pages\.php$ ustanovka_vytjazhnoj_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=166$
+#RewriteRule ^pages\.php$ puskonaladka_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=163$
+#RewriteRule ^pages\.php$ montazh_ventiljacii_moskva.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=161$
+#RewriteRule ^pages\.php$ montazh_vozduhovodov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=159$
+#RewriteRule ^pages\.php$ montazh_ventiljacii_pritochnoj.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=156$
+#RewriteRule ^pages\.php$ demontazh_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=157$
+#RewriteRule ^pages\.php$ ustanovka_vozduhovodov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=155$
+#RewriteRule ^pages\.php$ sertifikati4.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=154$
+#RewriteRule ^pages\.php$ baxi.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=153$
+#RewriteRule ^pages\.php$ ferroli.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=152$
+#RewriteRule ^pages\.php$ kiturami.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=151$
+#RewriteRule ^pages\.php$ buderus.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=150$
+#RewriteRule ^pages\.php$ protherm.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=149$
+#RewriteRule ^pages\.php$ viessmann.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=196$
+#RewriteRule ^pages\.php$ propilenglikol.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=148$
+#RewriteRule ^pages\.php$ de_dietrich.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=147$
+#RewriteRule ^pages\.php$ ekspluataciya_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=146$
+#RewriteRule ^pages\.php$ servis_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=145$
+#RewriteRule ^pages\.php$ remont_gazovih_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=182$
+#RewriteRule ^pages\.php$ montazh_holodilnyh_ustanovok.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=184$
+#RewriteRule ^pages\.php$ montazh_ventiljatora.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=183$
+#RewriteRule ^pages\.php$ montazh_fankojlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=181$
+#RewriteRule ^pages\.php$ montazh_chillerov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=179$
+#RewriteRule ^pages\.php$ remont_holodilnyh_agregatov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=180$
+#RewriteRule ^pages\.php$ remont_holodilnyh_mashin.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=178$
+#RewriteRule ^pages\.php$ remont_holodilnyh_ustanovok.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=177$
+#RewriteRule ^pages\.php$ ustanovka_ventiljatora.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=176$
+#RewriteRule ^pages\.php$ ustanovka_fankojlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=175$
+#RewriteRule ^pages\.php$ ustanovka_chillera.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=174$
+#RewriteRule ^pages\.php$ filtry_dlja_pritochnoj_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_all_news$
+#RewriteRule ^news\.php$ alfa_news.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=194$
+#RewriteRule ^pages\.php$ wolter.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=173$
+#RewriteRule ^pages\.php$ filtry_dlja_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=193$
+#RewriteRule ^pages\.php$ ventrex.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=171$
+#RewriteRule ^pages\.php$ vozdushnye_filtry_dlja_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=192$
+#RewriteRule ^pages\.php$ ruck.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=191$
+#RewriteRule ^pages\.php$ rosenberg.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=190$
+#RewriteRule ^pages\.php$ pyrox.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=189$
+#RewriteRule ^pages\.php$ ned.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=188$
+#RewriteRule ^pages\.php$ lennox.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=187$
+#RewriteRule ^pages\.php$ komfovent.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=186$
+#RewriteRule ^pages\.php$ hb_cotes.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=185$
+#RewriteRule ^pages\.php$ dec.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=217$
+#RewriteRule ^pages\.php$ hnt_40.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=216$
+#RewriteRule ^pages\.php$ ozh_lena_40.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=215$
+#RewriteRule ^pages\.php$ ozh_40.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=214$
+#RewriteRule ^pages\.php$ dixis_lux.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=213$
+#RewriteRule ^pages\.php$ teplonositel_antifriz_diksis.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=212$
+#RewriteRule ^pages\.php$ dixis_top.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=211$
+#RewriteRule ^pages\.php$ dixis_65.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=210$
+#RewriteRule ^pages\.php$ dixis_30.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=209$
+#RewriteRule ^pages\.php$ jetilenglikol_specavia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=208$
+#RewriteRule ^pages\.php$ tehnoform.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=207$
+#RewriteRule ^pages\.php$ antifriz_jetilenglikol.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=206$
+#RewriteRule ^pages\.php$ antifriz_dlja_sistem_ohlazhdenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=205$
+#RewriteRule ^pages\.php$ antifriz_dlja_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=204$
+#RewriteRule ^pages\.php$ teplonositel_cena.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=203$
+#RewriteRule ^pages\.php$ organicheskie_teplonositeli.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=202$
+#RewriteRule ^pages\.php$ kupit_teplonositel.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=201$
+#RewriteRule ^pages\.php$ teplonositel_dlja_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=198$
+#RewriteRule ^pages\.php$ glikol_kupit.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=200$
+#RewriteRule ^pages\.php$ teplonositel.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=394$
+#RewriteRule ^pages\.php$ teplonositeli_jekonom_klassa.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=393$
+#RewriteRule ^pages\.php$ katalog_teplonositelej.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=372$
+#RewriteRule ^pages\.php$ teplonositeli_antifrogen.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=392$
+#RewriteRule ^pages\.php$ katalog_teplonositelej_s_karboksilatnymi_prisadkami.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=199$
+#RewriteRule ^pages\.php$ hladonositel.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=197$
+#RewriteRule ^pages\.php$ jetilenglikol.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=195$
+#RewriteRule ^pages\.php$ glikol.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=225$
+#RewriteRule ^pages\.php$ filtr_dispensery.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=224$
+#RewriteRule ^pages\.php$ dispensery.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=223$
+#RewriteRule ^pages\.php$ kulery_dlja_vody.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=222$
+#RewriteRule ^pages\.php$ napolnye_kulery.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=221$
+#RewriteRule ^pages\.php$ prodazha_kulerov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=220$
+#RewriteRule ^pages\.php$ purifajery_optom_dlja_doma.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=219$
+#RewriteRule ^pages\.php$ purifajer_akvafor.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=218$
+#RewriteRule ^pages\.php$ purifajer.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=230$
+#RewriteRule ^pages\.php$ purifajer_discount.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=229$
+#RewriteRule ^pages\.php$ filters.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=228$
+#RewriteRule ^pages\.php$ purifajer_service.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=227$
+#RewriteRule ^pages\.php$ purifajer_install.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=226$
+#RewriteRule ^pages\.php$ purifajer_dostavka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=234$
+#RewriteRule ^pages\.php$ postavka_teplonositelya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=236$
+#RewriteRule ^pages\.php$ otlichnye_ceny_na_teplonositeli.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=235$
+#RewriteRule ^pages\.php$ utilizacija_teplonositelja.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=233$
+#RewriteRule ^pages\.php$ zamena_teplonositelja.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=232$
+#RewriteRule ^pages\.php$ kompleksnyj_servis.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=231$
+#RewriteRule ^pages\.php$ analiz_glikolya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=249$
+#RewriteRule ^pages\.php$ waterboss.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=248$
+#RewriteRule ^pages\.php$ ochistka_vody_ot_zheleza.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=247$
+#RewriteRule ^pages\.php$ ustanovka_obratnogo_osmosa.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=246$
+#RewriteRule ^pages\.php$ umjagchenie_vody_v_kottedzhe.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=245$
+#RewriteRule ^pages\.php$ umjagchenie_vody.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=244$
+#RewriteRule ^pages\.php$ stancija_obezzhelezivanija_vody.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=243$
+#RewriteRule ^pages\.php$ promyshlennyj_obratnyj_osmos.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=242$
+#RewriteRule ^pages\.php$ promyshlennoe_umjagchenie_vody.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=241$
+#RewriteRule ^pages\.php$ ochistka_vody_obratnym_osmosom.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=240$
+#RewriteRule ^pages\.php$ ochistka_vody_v_kottedzhe.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=239$
+#RewriteRule ^pages\.php$ otzyvy_o_waterboss.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=238$
+#RewriteRule ^pages\.php$ obezzhelezivanie_vody.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=237$
+#RewriteRule ^pages\.php$ bezreagentnoe_obezzhelezivanie_vody.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=250$
+#RewriteRule ^pages\.php$ phe_line.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=254$
+#RewriteRule ^pages\.php$ suhie_gradirni.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=253$
+#RewriteRule ^pages\.php$ remont_kaloriferov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=252$
+#RewriteRule ^pages\.php$ dry_cooler.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=251$
+#RewriteRule ^pages\.php$ vozdushnye_teploobmenniki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=284$
+#RewriteRule ^pages\.php$ proektirovanie_elektricheskogo_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=283$
+#RewriteRule ^pages\.php$ raschet_proizvodstvennogo_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=282$
+#RewriteRule ^pages\.php$ raschet_narujnogo_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=281$
+#RewriteRule ^pages\.php$ raschet_ulichnogo_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=280$
+#RewriteRule ^pages\.php$ metodi_rascheta_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=287$
+#RewriteRule ^pages\.php$ proektirovanie_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=278$
+#RewriteRule ^pages\.php$ raschet_svetodiodnogo_osveschenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=277$
+#RewriteRule ^pages\.php$ raschet_osveschennosti.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=276$
+#RewriteRule ^pages\.php$ raschet_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=275$
+#RewriteRule ^pages\.php$ raschet_iskustvennogo_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=274$
+#RewriteRule ^pages\.php$ ceni_na_svetodiodnoe_osveschenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=272$
+#RewriteRule ^pages\.php$ svetodiodnye_fonari_ulichnogo_osveschenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=271$
+#RewriteRule ^pages\.php$ svetodiodnie_sistemi_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=270$
+#RewriteRule ^pages\.php$ svetodiodnye_svetilniki_ulichnogo_osveschenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=269$
+#RewriteRule ^pages\.php$ svetodiodnie_projektori.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=268$
+#RewriteRule ^pages\.php$ svetodiodnie_lampi_osveschenia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=267$
+#RewriteRule ^pages\.php$ svetodiodnie_lampi_dlja_doma.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=266$
+#RewriteRule ^pages\.php$ svetodiodnie_istochniki_sveta.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=265$
+#RewriteRule ^pages\.php$ svetodiodnoe_ulichnoe_osveschenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=264$
+#RewriteRule ^pages\.php$ svetodiodnoe_osveschenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=262$
+#RewriteRule ^pages\.php$ svetodiodnoe_osveschenie_pomewenij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=261$
+#RewriteRule ^pages\.php$ svetodiodnoe_osveschenie_doma.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=260$
+#RewriteRule ^pages\.php$ svetodiodnoe_osveschenie_vitrin.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=288$
+#RewriteRule ^pages\.php$ raschet_osvewenija_pomewenij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=259$
+#RewriteRule ^pages\.php$ svetodiodnoe_avarijnoe_osveschenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=258$
+#RewriteRule ^pages\.php$ svetodiodnaja_podsvetka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=257$
+#RewriteRule ^pages\.php$ svetodiodnoe_osveschenie_potolka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=256$
+#RewriteRule ^pages\.php$ promyshlennoe_svetodiodnoe_osveschenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=290$
+#RewriteRule ^pages\.php$ luchshaja_kompanija_rossii_2010.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=172$
+#RewriteRule ^pages\.php$ ugolnyj_filtr_dlja_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=289$
+#RewriteRule ^pages\.php$ predpriyatie_goda_2009.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=291$
+#RewriteRule ^pages\.php$ portfolio.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=294$
+#RewriteRule ^pages\.php$ sauermann_si_1820.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=293$
+#RewriteRule ^pages\.php$ sauermann_si_2750.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=292$
+#RewriteRule ^pages\.php$ sauermann_si_1730.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=306$
+#RewriteRule ^pages\.php$ obslujivanie_ctp_itp.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=305$
+#RewriteRule ^pages\.php$ facility_management.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=304$
+#RewriteRule ^pages\.php$ ekspluataciya_soorujeniy.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=303$
+#RewriteRule ^pages\.php$ ekspluatiruyushaya_organizaciya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=300$
+#RewriteRule ^pages\.php$ ekspluataciya_nedvigimosti.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=302$
+#RewriteRule ^pages\.php$ obslujivanie_nedvigimosti.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=301$
+#RewriteRule ^pages\.php$ ekspluataciya_zdaniy.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=299$
+#RewriteRule ^pages\.php$ obslujivanie_ventilyacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=298$
+#RewriteRule ^pages\.php$ obslujivanie_otopleniya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=297$
+#RewriteRule ^pages\.php$ service.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=311$
+#RewriteRule ^pages\.php$ PGVMP.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=310$
+#RewriteRule ^pages\.php$ pfvu5800.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=309$
+#RewriteRule ^pages\.php$ UGV25.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=308$
+#RewriteRule ^pages\.php$ ugv20mp.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=307$
+#RewriteRule ^pages\.php$ oborudovanie_dlja_ochistki_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=379$
+#RewriteRule ^pages\.php$ oborudovanie_dlja_osmotra_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=380$
+#RewriteRule ^pages\.php$ peredvizhnye_filtroventiljacionnye_ustanovki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=313$
+#RewriteRule ^pages\.php$ katalog.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=378$
+#RewriteRule ^pages\.php$ gibkie_valy.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=382$
+#RewriteRule ^pages\.php$ komplekty.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=381$
+#RewriteRule ^pages\.php$ aksessuary.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=320$
+#RewriteRule ^pages\.php$ montazh_sistem_vodosnabzhenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=319$
+#RewriteRule ^pages\.php$ montazh_zagorodnogo_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=318$
+#RewriteRule ^pages\.php$ ceny_na_montazh_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=317$
+#RewriteRule ^pages\.php$ montazh_dizelnyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=316$
+#RewriteRule ^pages\.php$ montazh_trub_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=315$
+#RewriteRule ^pages\.php$ montazh_otoplenija_v_zagorodnom_dome.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=314$
+#RewriteRule ^pages\.php$ montazh_sistem_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=324$
+#RewriteRule ^pages\.php$ teplotex.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=323$
+#RewriteRule ^pages\.php$ ridan.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=322$
+#RewriteRule ^pages\.php$ mashimpeks.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=321$
+#RewriteRule ^pages\.php$ swep.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=295$
+#RewriteRule ^pages\.php$ etra.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=296$
+#RewriteRule ^pages\.php$ funke.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=337$
+#RewriteRule ^pages\.php$ ustanovka_i_montazh_svetilnikov_v_podvesnoj_potolok.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=336$
+#RewriteRule ^pages\.php$ svetodiodnye_svetilniki_dlja_podvesnyh_potolkov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=333$
+#RewriteRule ^pages\.php$ potolochnye_svetodiodnye_svetilniki_dlja_podvesnyh_potolkov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=334$
+#RewriteRule ^pages\.php$ jenergosberegajuwie_svetilniki_dlja_podvesnyh_natjazhnyh_potolkov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=332$
+#RewriteRule ^pages\.php$ tochechnye_i_vstraivaemye_svetilniki_dlja_podvesnogo_potolka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=331$
+#RewriteRule ^pages\.php$ vstraivaemye_svetodiodnye_potolochnye_svetilniki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=330$
+#RewriteRule ^pages\.php$ svetodiodnye_svetilniki_tipa_armstrong.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=329$
+#RewriteRule ^pages\.php$ vstraivaemyj_svetilnik_pod_armstrong.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=328$
+#RewriteRule ^pages\.php$ potolochnye_svetilniki_armstrong_dlja_podvesnogo_potolka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=327$
+#RewriteRule ^pages\.php$ podvesnye_svetodiodnye_svetilniki_armstrong.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=326$
+#RewriteRule ^pages\.php$ lampy_dlja_potolka_armstrong.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=325$
+#RewriteRule ^pages\.php$ cena_na_svetilnik_armstrong.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=341$
+#RewriteRule ^pages\.php$ ustanovka_dlja_udalenija_otlozhenij_barrakuda.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=340$
+#RewriteRule ^pages\.php$ ustanovka_dlja_udalenija_otlozhenij_tea_pot.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=339$
+#RewriteRule ^pages\.php$ ustanovka_dlja_udalenija_otlozhenij_cip_40.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=338$
+#RewriteRule ^pages\.php$ ustanovka_dlja_udalenija_otlozhenij_cip_20.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=346$
+#RewriteRule ^pages\.php$ reagent_dlja_udalenija_izvesti_cillit_zn_i.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=344$
+#RewriteRule ^pages\.php$ reagent_dlja_udalenija_izvesti_cillit_ffw_tw.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=343$
+#RewriteRule ^pages\.php$ ustanovka_dlja_udalenija_otlozhenij_alfa_laval_cip_200.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=342$
+#RewriteRule ^pages\.php$ ustanovka_dlja_udalenija_otlozhenij_alfa_laval_cip_75.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=351$
+#RewriteRule ^pages\.php$ reagent_dlja_nejtralizacii_cillit_neutra_p.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=350$
+#RewriteRule ^pages\.php$ reagent_dlja_udalenija_izvesti_cillit_kalkloser_p.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=349$
+#RewriteRule ^pages\.php$ reagent_dlja_nejtralizacii_cillit_nеutra.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=347$
+#RewriteRule ^pages\.php$ reagent_dlja_udalenija_izvesti_cillit_kalkloser.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=348$
+#RewriteRule ^pages\.php$ reagent_dlja_zawity_oborudovanija_cillit_naw.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=352$
+#RewriteRule ^pages\.php$ reagenty_dlja_himicheskoj_ochistki_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=356$
+#RewriteRule ^pages\.php$ reagent_dlja_udalenija_otlozhenij_alfacaus.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=355$
+#RewriteRule ^pages\.php$ reagent_dlja_udalenija_otlozhenij_alfaphos.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=354$
+#RewriteRule ^pages\.php$ reagent_dlja_udalenija_otlozhenij_alfa_p_scale.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=353$
+#RewriteRule ^pages\.php$ reagent_dlja_nejtralizacii_alfaneutra.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=358$
+#RewriteRule ^pages\.php$ reagent_dlja_nejtralizacii_alfa_p_neutra.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=357$
+#RewriteRule ^pages\.php$ reagent_dlja_udalenija_otlozhenij_alpacon_descalant.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=360$
+#RewriteRule ^pages\.php$ kompleks_rabot_alfa_laval_po_obsluzhivaniju_pto.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=359$
+#RewriteRule ^pages\.php$ obsluzhivanie_teploobmennikov_kompaniej_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=361$
+#RewriteRule ^pages\.php$ teplonositeli_hot_stream.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=363$
+#RewriteRule ^pages\.php$ sertifikat_ariston.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=365$
+#RewriteRule ^pages\.php$ sertifikat_ferroli.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=364$
+#RewriteRule ^pages\.php$ sertifikat_baxi.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=366$
+#RewriteRule ^pages\.php$ sertifikat_npo_mashinostroenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=370$
+#RewriteRule ^pages\.php$ sertifikat_atek.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=369$
+#RewriteRule ^pages\.php$ sertifikat_rosenberg.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=368$
+#RewriteRule ^pages\.php$ sertifikat_wilo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=367$
+#RewriteRule ^pages\.php$ sertifikat_trane.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=371$
+#RewriteRule ^pages\.php$ utilizaciya_glikolya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=372$
+#RewriteRule ^pages\.php$ teplonositeli_antifrogen.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=373$
+#RewriteRule ^pages\.php$ purifajery_akvafor.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=376$
+#RewriteRule ^pages\.php$ pismo_kaskad_menedzhment.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=375$
+#RewriteRule ^pages\.php$ pismo_mpk_kreker.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=374$
+#RewriteRule ^pages\.php$ dopusk_sro.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=377$
+#RewriteRule ^pages\.php$ pismo_bank_uralsib.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=386$
+#RewriteRule ^pages\.php$ teploobmennik.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=388$
+#RewriteRule ^pages\.php$ plastinchatye_teploobmenniki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=387$
+#RewriteRule ^pages\.php$ novoe_pokolenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=389$
+#RewriteRule ^pages\.php$ plastinchatye_teploobmenniki_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=385$
+#RewriteRule ^pages\.php$ need.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=384$
+#RewriteRule ^pages\.php$ folding.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=383$
+#RewriteRule ^pages\.php$ ablution.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=391$
+#RewriteRule ^pages\.php$ teplonositeli_tosol_sintez.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=390$
+#RewriteRule ^pages\.php$ teplonositeli_arkton.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=362$
+#RewriteRule ^pages\.php$ teplonositeli_thermagent.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=395$
+#RewriteRule ^pages\.php$ zamena_teplonositelya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=396$
+#RewriteRule ^pages\.php$ svojstva_teplonositelej.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=398$
+#RewriteRule ^pages\.php$ katalog_reagentov_dlja_promyvki_teploobmennika.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=397$
+#RewriteRule ^pages\.php$ katalog_ustanovok_dlja_udalenija_otlozhenij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=417$
+#RewriteRule ^pages\.php$ sillit_boy.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=416$
+#RewriteRule ^pages\.php$ cip_station.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=403$
+#RewriteRule ^pages\.php$ kotly_aogv_zavoda_molot.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=421$
+#RewriteRule ^pages\.php$ equipment.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=420$
+#RewriteRule ^pages\.php$ montaj_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=419$
+#RewriteRule ^pages\.php$ sales.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=418$
+#RewriteRule ^pages\.php$ raschet_teploobmennika.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=434$
+#RewriteRule ^pages\.php$ apparat_kombinirovannyj_akgv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=433$
+#RewriteRule ^pages\.php$ apparaty_otopitelnye_aogvm.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=432$
+#RewriteRule ^pages\.php$ apparaty_otopitelnye_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=453$
+#RewriteRule ^pages\.php$ teplo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=460$
+#RewriteRule ^pages\.php$ promyvka_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=467$
+#RewriteRule ^pages\.php$ razbornye_plastinchatye_teploobmenniki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=466$
+#RewriteRule ^pages\.php$ pajanye_plastinchatye_teploobmenniki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=465$
+#RewriteRule ^pages\.php$ parovodjanye_razbornye_plastinchatye_teploobmenniki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=464$
+#RewriteRule ^pages\.php$ nadezhnyj_montazh_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=463$
+#RewriteRule ^pages\.php$ montazh_jelementov_kondicionirovanija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=462$
+#RewriteRule ^pages\.php$ proektirovanie_montazha_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=461$
+#RewriteRule ^pages\.php$ ceny_na_montazh_ventiljacii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=487$
+#RewriteRule ^pages\.php$ primenenie_teplonositelej.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=486$
+#RewriteRule ^pages\.php$ zamena_trub_otopleniya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=485$
+#RewriteRule ^pages\.php$ zamena_stoyakov_otopleniya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=484$
+#RewriteRule ^pages\.php$ servis_system_otopleniya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=483$
+#RewriteRule ^pages\.php$ promyvka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=482$
+#RewriteRule ^pages\.php$ otoplenie_zdanij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=481$
+#RewriteRule ^pages\.php$ otoplenie_jilogo_doma.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=480$
+#RewriteRule ^pages\.php$ ochistka_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=479$
+#RewriteRule ^pages\.php$ obslujivanie_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=478$
+#RewriteRule ^pages\.php$ montaj_otopleniya_i_vodosnabjeniya.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=477$
+#RewriteRule ^pages\.php$ ts_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=476$
+#RewriteRule ^pages\.php$ table_phe.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=475$
+#RewriteRule ^pages\.php$ table_bhe.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=474$
+#RewriteRule ^pages\.php$ plastiny_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=473$
+#RewriteRule ^pages\.php$ phe_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=472$
+#RewriteRule ^pages\.php$ calc.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=471$
+#RewriteRule ^pages\.php$ c_block.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=470$
+#RewriteRule ^pages\.php$ bhe_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=469$
+#RewriteRule ^pages\.php$ alfalaval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=509$
+#RewriteRule ^pages\.php$ shemy_raschet_i_proektirovanie_ustanovki_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=508$
+#RewriteRule ^pages\.php$ ustanovka_i_montazh_batarej_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=507$
+#RewriteRule ^pages\.php$ ustanovka_radiatorov_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=506$
+#RewriteRule ^pages\.php$ ustanovka_sistem_gazovogo_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=505$
+#RewriteRule ^pages\.php$ montazh_avtonomnogo_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=504$
+#RewriteRule ^pages\.php$ montazh_otoplenija_i_kotelnyh.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=503$
+#RewriteRule ^pages\.php$ montazh_parovogo_i_naruzhnogo_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=502$
+#RewriteRule ^pages\.php$ rascenki_i_prajs_na_montazh_sistem_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=501$
+#RewriteRule ^pages\.php$ stoimost_montazha_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=500$
+#RewriteRule ^pages\.php$ montazh_otoplenija_v_kvartire.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=499$
+#RewriteRule ^pages\.php$ montazh_teplyh_polov_i_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=498$
+#RewriteRule ^pages\.php$ montazh_sistem_otoplenija_pod_kljuch_i_puskonaladka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=497$
+#RewriteRule ^pages\.php$ smeta_i_raschet_montazha_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=493$
+#RewriteRule ^pages\.php$ montazh_radiatorov_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=492$
+#RewriteRule ^pages\.php$ montazh_otoplenija_dlja_kottedzhej.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=491$
+#RewriteRule ^pages\.php$ demontazh_sistemy_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=490$
+#RewriteRule ^pages\.php$ montazh_otoplenija_iz_mednyh_i_stalnyh_trub.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=495$
+#RewriteRule ^pages\.php$ proektirovanie_i_montazh_sistem_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=489$
+#RewriteRule ^pages\.php$ montazh_otoplenija_iz_polipropilenovyh_trub.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=488$
+#RewriteRule ^pages\.php$ montazh_otoplenija_iz_plastikovyh_trub.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=496$
+#RewriteRule ^pages\.php$ populjarnye_shemy_montazha_sistem_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=494$
+#RewriteRule ^pages\.php$ montazh_vodjanogo_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=521$
+#RewriteRule ^pages\.php$ shemy_montazha_i_ustanovki_gazovyh_dizelnyh_otopitelnyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=520$
+#RewriteRule ^pages\.php$ montazh_i_ustanovka_otopitelnyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=519$
+#RewriteRule ^pages\.php$ montazh_gazovyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=518$
+#RewriteRule ^pages\.php$ prodazha_i_montazh_gazovyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=517$
+#RewriteRule ^pages\.php$ stoimost_i_ceny_na_montazh_i_ustanovku_gazovyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=516$
+#RewriteRule ^pages\.php$ montazh_i_ustanovka_dvuhkonturnyh_gazovyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=515$
+#RewriteRule ^pages\.php$ montazh_i_ustanovka_dymohoda.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=514$
+#RewriteRule ^pages\.php$ pravila_montazha_i_ustanovki_gazovyh_nastennyh_i_vodogrejnyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=513$
+#RewriteRule ^pages\.php$ ustanovka_gazovogo_otoplenija_v_dome_kottedzhe_i_na_dache.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=511$
+#RewriteRule ^pages\.php$ stoimost_i_ceny_na_ustanovku_gazovogo_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=512$
+#RewriteRule ^pages\.php$ ustanovka_avtonomnogo_vodjanogo_i_vozdushnogo_otoplenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=510$
+#RewriteRule ^pages\.php$ ustanovka_i_montazh_trub_nasosov_kollektorov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=149$
+#RewriteRule ^news\.php multisplit_sistema.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=145$
+#RewriteRule ^news\.php novaja_multisplitnaja_sistema.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=146$
+#RewriteRule ^news\.php nastennaja_monosplitnaja_model.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=143$
+#RewriteRule ^news\.php uchastie_v_proekte.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_all_news&template_id=2$
+#RewriteRule ^news\.php arhiv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=119$
+#RewriteRule ^news\.php kompanija_gea_happel.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=125$
+#RewriteRule ^news\.php revoljucionnye_jenergosberegajuwie_tehnologii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=126$
+#RewriteRule ^news\.php razvitie_fankojlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=127$
+#RewriteRule ^news\.php issledovatelskij_centr.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=128$
+#RewriteRule ^news\.php samye_gigienichnye.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=129$
+#RewriteRule ^news\.php aermec_r134a.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=123$
+#RewriteRule ^news\.php korporacija_сarrier_obedinjaetsja.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=124$
+#RewriteRule ^news\.php novyj_temperaturnyj_monitor.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=121$
+#RewriteRule ^news\.php vystavka.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=122$
+#RewriteRule ^news\.php razrabotka_aermec.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=120$
+#RewriteRule ^news\.php programmnoe_obespechenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=113$
+#RewriteRule ^news\.php solnechnaja_jenergija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=112$
+#RewriteRule ^news\.php chillery_gea_happel.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=110$
+#RewriteRule ^news\.php novinki_mcquay.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=111$
+#RewriteRule ^news\.php novye_teplovye_nasosy.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=114$
+#RewriteRule ^news\.php kompanija_noresco.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=115$
+#RewriteRule ^news\.php aermec_razvivaet_liniju_nastennyh_kondicionerov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=116$
+#RewriteRule ^news\.php novaja_osvetitelnaja_sistema.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=117$
+#RewriteRule ^news\.php perspektivy_razvitija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=109$
+#RewriteRule ^news\.php novye_vodonagrevateli.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=105$
+#RewriteRule ^news\.php carrier_povyshaet_jenergeticheskuju_jeffektivnost.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=106$
+#RewriteRule ^news\.php prezident_emsi.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=107$
+#RewriteRule ^news\.php kompanija_carrier_predstavljaet_novyj_chiller.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=108$
+#RewriteRule ^news\.php novoe_ftorpolimernoe_antikorrozijnoe_pokrytie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=101$
+#RewriteRule ^news\.php revoljucionnye_innovacii_na_rynke_fankojlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=103$
+#RewriteRule ^news\.php novaja_model_kondicionera_aermec.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=98$
+#RewriteRule ^news\.php chislo_morozilnyh_kamer.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=99$
+#RewriteRule ^news\.php carrier_obespechit_vystavku_world_expo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=100$
+#RewriteRule ^news\.php carrier_predstavljaet_svoju_novuju_razrabotku.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=102$
+#RewriteRule ^news\.php ocherednoj_perspektivnyj_kontrakt.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=104$
+#RewriteRule ^news\.php ocherednoj_perspektivnyj_kontrakt.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=89$
+#RewriteRule ^news\.php klimaticheskij_centr.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=90$
+#RewriteRule ^news\.php jeffektivnaja_kabina_dlja_kurenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=91$
+#RewriteRule ^news\.php rasshirennaja_versija_kamery.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=92$
+#RewriteRule ^news\.php nachalo_perspektivnogo_sotrudnichestva.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=94$
+#RewriteRule ^news\.php sotrudnichestvo_daikin_i_trane.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=93$
+#RewriteRule ^news\.php kompanija_daikin_industries.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=88$
+#RewriteRule ^news\.php salon_daikin_v_kitae.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=86$
+#RewriteRule ^news\.php godovoj_otchet_kompanii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=87$
+#RewriteRule ^news\.php predstavitelstvo_v_moskve.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=66$
+#RewriteRule ^news\.php teplovoj_nasos_s_vozduhom.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=67$
+#RewriteRule ^news\.php kompanija_daikin_razrabotala_novuju_versiju_nasosa.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=68$
+#RewriteRule ^news\.php chistyj_gorod_bez_ugleroda.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=70$
+#RewriteRule ^news\.php novyj_modelnyj_rjad.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=71$
+#RewriteRule ^news\.php novinka_ot_daikin.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=73$
+#RewriteRule ^news\.php nasosy_grundfos_na_novyh_zavodah.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=74$
+#RewriteRule ^news\.php kontrakt_s_kitajskoj_sudostroitelnoj_kompaniej.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=75$
+#RewriteRule ^news\.php kalifornija_perehodit_na_solnechnuju_jenergiju.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=76$
+#RewriteRule ^news\.php grundfos_rossija_poluchil_datskuju_korolevskuju_nagradu.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=78$
+#RewriteRule ^news\.php novaja_linejka_iznosostojkih_pogruzhnyh_nasosov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=79$
+#RewriteRule ^news\.php novyj_tip_klapana.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=82$
+#RewriteRule ^news\.php danfoss_pomogaet_ochiwat_pitevuju_vodu.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=83$
+#RewriteRule ^news\.php snizhajte_vybrosy_parnikovyh_gazov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=81$
+#RewriteRule ^news\.php china_refrigeration_2009.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=84$
+#RewriteRule ^news\.php danfoss_vrednyh_vybrosov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=85$
+#RewriteRule ^news\.php danfoss_prisoedinjaetsja_k_proektu.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=65$
+#RewriteRule ^news\.php britanskaja_kompanija_daikin.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=72$
+#RewriteRule ^news\.php monobloki_altherma.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=77$
+#RewriteRule ^news\.php grundfos_anonsiroval_novuju_sistemu_kontrolja.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=215$
+#RewriteRule ^news\.php peremeny_v_pivovarenii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=216$
+#RewriteRule ^news\.php reshenija_dlja_pivovarenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=217$
+#RewriteRule ^news\.php portugalskij_konkistador.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=218$
+#RewriteRule ^news\.php sotrudnichestvo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=219$
+#RewriteRule ^news\.php teplo_vashego_doma.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=220$
+#RewriteRule ^news\.php opasnye_puzyrki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=221$
+#RewriteRule ^news\.php sotni_millionov_nlo_1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=222$
+#RewriteRule ^news\.php sotni_millionov_nlo_2.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=223$
+#RewriteRule ^news\.php sobytija_6.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=224$
+#RewriteRule ^news\.php jenergeticheskie_potrebnosti.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=225$
+#RewriteRule ^news\.php sobytija_7.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=226$
+#RewriteRule ^news\.php tehnologija_vzryva.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=227$
+#RewriteRule ^news\.php vzaimovygodnoe_partnerstvo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=199$
+#RewriteRule ^news\.php lokomotiv_jekonomiki_regiona.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=228$
+#RewriteRule ^news\.php mobilnyj_opyt.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=200$
+#RewriteRule ^news\.php sobytija_4.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=200$
+#RewriteRule ^news\.php sobytija_4.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=201$
+#RewriteRule ^news\.php vzaimovygodnyj_process.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=202$
+#RewriteRule ^news\.php ekonomichnost_i_chistota.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=203$
+#RewriteRule ^news\.php 10000_avtomobilnyh_dvigatelej_v_sutki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=204$
+#RewriteRule ^news\.php trehstoronnij_uspeh.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=205$
+#RewriteRule ^news\.php svet_v_konce_tonnelja.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=207$
+#RewriteRule ^news\.php k_uslugam_otrasli.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=208$
+#RewriteRule ^news\.php medicina_v_dejstvii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=209$
+#RewriteRule ^news\.php vygodnoe_sotrudnichestvo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=210$
+#RewriteRule ^news\.php popolnenie_zapasov_presnoj_vody.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=211$
+#RewriteRule ^news\.php ldy_do_samogo_gorizonta.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=212$
+#RewriteRule ^news\.php ldy_do_samogo_gorizonta.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=212$
+#RewriteRule ^news\.php veter_peremen_1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=213$
+#RewriteRule ^news\.php veter_peremen_2.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=214$
+#RewriteRule ^news\.php sobytija_5.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=177$
+#RewriteRule ^news\.php v_plavanie_s_mechtoj.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=178$
+#RewriteRule ^news\.php usovershenstvovanie_tehnologij_teploobmena.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=179$
+#RewriteRule ^news\.php poroshok_dlja_gurmanov_2.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=180$
+#RewriteRule ^news\.php poroshok_dlja_gurmanov_1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=181$
+#RewriteRule ^news\.php nailuchshee_sochetanie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=182$
+#RewriteRule ^news\.php sok_klassa_premuium.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=183$
+#RewriteRule ^news\.php standart_jasnosti.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=185$
+#RewriteRule ^news\.php kontrol_nad_processom.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=186$
+#RewriteRule ^news\.php my_pomogaem_dostigat_vershin.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=187$
+#RewriteRule ^news\.php chistejshee_rastitelnoe_maslo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=188$
+#RewriteRule ^news\.php svoboda_ot_vrednyh_zhirov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=189$
+#RewriteRule ^news\.php izmenenie_potrebitelskoj_psihologii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=191$
+#RewriteRule ^news\.php bitvy_s_melkim_vragom.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=190$
+#RewriteRule ^news\.php pribyl_iz_chistyh_smesitelej.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=192$
+#RewriteRule ^news\.php sobytija_3.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=193$
+#RewriteRule ^news\.php blestjawie_perspektivy.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=194$
+#RewriteRule ^news\.php jinlong_coppeper_perspektivy_razvitija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=195$
+#RewriteRule ^news\.php upravlenie_moguwestvennoj_rekoj.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=196$
+#RewriteRule ^news\.php separator_dlja_rafinacii_rastitelnyh_masel.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=197$
+#RewriteRule ^news\.php sverhnovoe_reshenie_1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=198$
+#RewriteRule ^news\.php sverhnovoe_reshenie_2.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=159$
+#RewriteRule ^news\.php moskva_v_novom_tysjacheletii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=160$
+#RewriteRule ^news\.php novoe_sokroviwe.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=161$
+#RewriteRule ^news\.php ochistnye_sooruzhenija.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=162$
+#RewriteRule ^news\.php sobytija_1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=163$
+#RewriteRule ^news\.php puteshestvie_syra.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=164$
+#RewriteRule ^news\.php mgnovennyj_otvet_vo_Francii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=165$
+#RewriteRule ^news\.php beloe_zoloto_dzhunglej.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=166$
+#RewriteRule ^news\.php novatorstvo_1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=167$
+#RewriteRule ^news\.php novatorstvo_2.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=168$
+#RewriteRule ^news\.php konkurentov_net.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=169$
+#RewriteRule ^news\.php kperevozka_1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=170$
+#RewriteRule ^news\.php perevozka_2.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=171$
+#RewriteRule ^news\.php s_zabotoj_o_zdorove.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=172$
+#RewriteRule ^news\.php produkcija_dlja_biotehnologij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=173$
+#RewriteRule ^news\.php toplivo_dlja_jekonomiki.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=174$
+#RewriteRule ^news\.php stavka_na_jetanol_1.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=175$
+#RewriteRule ^news\.php stavka_na_jetanol_2.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=176$
+#RewriteRule ^news\.php otdyh_v_prohlade_dlja_olimpijcev.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=527$
+#RewriteRule ^pages\.php$ ustanovka_gazovyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=528$
+#RewriteRule ^pages\.php$ trebovanija_na_ustanovku_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=529$
+#RewriteRule ^pages\.php$ ustanovka_navesnyh_kotlov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=522$
+#RewriteRule ^pages\.php$ deshevye_kotly.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=523$
+#RewriteRule ^pages\.php$ jekonom_kotly.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=524$
+#RewriteRule ^pages\.php$ nedorogie_kotly.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=436$
+#RewriteRule ^pages\.php$ vodogrejnye_kolonki_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=437$
+#RewriteRule ^pages\.php$ gde_kupit_kotel_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=438$
+#RewriteRule ^pages\.php$ sistemy_otoplenija_ross_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=439$
+#RewriteRule ^pages\.php$ gazovye_kotly_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=440$
+#RewriteRule ^pages\.php$ kotly_aogv_11.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=441$
+#RewriteRule ^pages\.php$ kotly_aogv_12.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=442$
+#RewriteRule ^pages\.php$ kotly_aogv_13.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=443$
+#RewriteRule ^pages\.php$ kotly_aogv_19.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=444$
+#RewriteRule ^pages\.php$ kotly_aogv_22.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=445$
+#RewriteRule ^pages\.php$ kotly_aogv_17.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=446$
+#RewriteRule ^pages\.php$ kotly_aogv_15.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=447$
+#RewriteRule ^pages\.php$ kotly_aogv_24.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=448$
+#RewriteRule ^pages\.php$ kotly_aogv_7,4.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=449$
+#RewriteRule ^pages\.php$ kotly_aogv_10.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=450$
+#RewriteRule ^pages\.php$ kotly_aogv_6.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=451$
+#RewriteRule ^pages\.php$ kotly_aogv_23.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=452$
+#RewriteRule ^pages\.php$ kotly_aogv_29.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=454$
+#RewriteRule ^pages\.php$ kotly_aogv_35.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=455$
+#RewriteRule ^pages\.php$ kotly_aogv_40.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=456$
+#RewriteRule ^pages\.php$ kotly_aogv_50.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=457$
+#RewriteRule ^pages\.php$ kotly_aogv_93.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=458$
+#RewriteRule ^pages\.php$ kotly_aogv_16.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=459$
+#RewriteRule ^pages\.php$ kotly_aogv_20.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=422$
+#RewriteRule ^pages\.php$ zavod_aogv_zhukovskij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=423$
+#RewriteRule ^pages\.php$ instrukcija_k_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=424$
+#RewriteRule ^pages\.php$ otzyvy_o_kotlah_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=425$
+#RewriteRule ^pages\.php$ kotly_aogv_komfort.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=426$
+#RewriteRule ^pages\.php$ ustanovki_aogv_universal.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=427$
+#RewriteRule ^pages\.php$ kotly_aogv_jekonom.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=428$
+#RewriteRule ^pages\.php$ kotly_aogv_siberia.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=429$
+#RewriteRule ^pages\.php$ kotly_aogv_beretta.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=430$
+#RewriteRule ^pages\.php$ otopitel_kotl_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=399$
+#RewriteRule ^pages\.php$ aogv_kotly_dlja_kazhdogo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=400$
+#RewriteRule ^pages\.php$ montazh_i_ustanovka_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=401$
+#RewriteRule ^pages\.php$ harakteristiki_parametry_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=402$
+#RewriteRule ^pages\.php$ remont_i_servis_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=404$
+#RewriteRule ^pages\.php$ cena_stoimost_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=405$
+#RewriteRule ^pages\.php$ magaziny_prodazh_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=406$
+#RewriteRule ^pages\.php$ jekspluatacija_kotlov_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=407$
+#RewriteRule ^pages\.php$ shema_podkljuchenija_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=408$
+#RewriteRule ^pages\.php$ vodogrejnye_kotly_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=409$
+#RewriteRule ^pages\.php$ tehnicheskij_pasport_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=413$
+#RewriteRule ^pages\.php$ termoreguljatory_dlja_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=410$
+#RewriteRule ^pages\.php$ proizvodstvo_kotlov_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=411$
+#RewriteRule ^pages\.php$ napolnye_i_nastennye_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=412$
+#RewriteRule ^pages\.php$ princip_raboty_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=414$
+#RewriteRule ^pages\.php$ dokumentacija_po_nastrojke_aogv.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_page&page_id=415$
+#RewriteRule ^pages\.php$ aogv_borinskoe.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=44$
+#RewriteRule ^news\.php buduwee_itp_dlja_kvartir.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=42$
+#RewriteRule ^news\.php kompanija_alfa_laval_poluchila_novyj_zakaz.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=41$
+#RewriteRule ^news\.php kompanija_alfa_laval_priobrela_nemeckuju_kompaniju.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=40$
+#RewriteRule ^news\.php alfa_laval_poluchila_zakaz_na_75_millionov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=39$
+#RewriteRule ^news\.php kompanija_alfa_laval_poluchila_zakaz_na_65_mln.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=38$
+#RewriteRule ^news\.php ezhegodnoe_sobranie_akcionerov_kompanii_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=37$
+#RewriteRule ^news\.php teploobmenniki_alfa_laval_budut_ispolzovany_v_processe.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=36$
+#RewriteRule ^news\.php alfadisc_jenergojeffektivnyj_gibridnyj_teploobmennik.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=35$
+#RewriteRule ^news\.php popolnenie_v_semejstve_t_plastinchatyh_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=34$
+#RewriteRule ^news\.php alfa_laval_poluchil_neftehimicheskij_zakaz_na_120_millionov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=33$
+#RewriteRule ^news\.php alfa_laval_na_achema_2009.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=32$
+#RewriteRule ^news\.php pererabotka_izlishkov_pivnyh_drozhzhej.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=31$
+#RewriteRule ^news\.php kozhuhotrubnyj_teploobmennik_pharma_line.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=29$
+#RewriteRule ^news\.php toftejorg_ochistka_rezervuarov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=28$
+#RewriteRule ^news\.php horoshee_obsluzhivanie_bolshee_vremja_bezotkaznoj_raboty.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=27$
+#RewriteRule ^news\.php alfa_laval_helpman_and_fincoil.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=26$
+#RewriteRule ^news\.php alfa_laval_otkryvaet_novuju_jeru_v_istorii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=25$
+#RewriteRule ^news\.php reaktory_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=24$
+#RewriteRule ^news\.php innovacionnyj_pajannyj_plastinchatyj_teploobmennik.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=23$
+#RewriteRule ^news\.php alfa_laval_poluchil_vtoruju_v_svoej_istorii_premiju_ringier.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=22$
+#RewriteRule ^news\.php novyj_mnogofunkcionalnyj_teploobmennik_povyshaet_jeffektivnost.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=21$
+#RewriteRule ^news\.php novoe_semejstvo_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=20$
+#RewriteRule ^news\.php otoplenie_i_gorjachaja_voda_v_odnom_korpuse.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=19$
+#RewriteRule ^news\.php ohlazhdajuwij_apparat_izgotovlennyj_po_tehnologii_airmax.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=18$
+#RewriteRule ^news\.php alfablue_novoe_semejstvo_ammiachnyh_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=17$
+#RewriteRule ^news\.php t_serija_plastinchatyh_teploobmennikov_brosaet_vyzov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=16$
+#RewriteRule ^news\.php unichtozhaja_legionella_bacteria.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=15$
+#RewriteRule ^news\.php serija_alfacubic_povyshaet_predelnoe_davlenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=14$
+#RewriteRule ^news\.php alfa_laval_anonsiroval_novuju_linejku_vozdushnyh_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=13$
+#RewriteRule ^news\.php kogda_razmer_imeet_znachenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=12$
+#RewriteRule ^news\.php plastinchatyj_kondensator_maloj_mownosti.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=11$
+#RewriteRule ^news\.php alfa_laval_contherm_luchshij_piwevoj_teploobmennik.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=10$
+#RewriteRule ^news\.php alfa_laval_pharma_x_sanitarnyj_teploobmennik.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=9$
+#RewriteRule ^news\.php brau_beviale_2008_buduwee_pivnoj_industrii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=8$
+#RewriteRule ^news\.php buduwee_spirtovyh_dekantatorov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=7$
+#RewriteRule ^news\.php malenkij_no_jeffektivnyj_modul.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=6$
+#RewriteRule ^news\.php alfa_laval_focus_toplivoochistitel_dlja_jenergeticheskoj_promyshlennosti.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=63$
+#RewriteRule ^news\.php ochistitelnaja_sistema_rezervuarov_i_bakov_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=62$
+#RewriteRule ^news\.php beskompromissnoe_kachestvo_nasosov_ot_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=61$
+#RewriteRule ^news\.php sistema_ochistki_rezervuarov_alfa_laval_gunclean_toftejorg_i65_S.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=60$
+#RewriteRule ^news\.php malye_dekantatory_alfa_laval_podnimajut_planku.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=59$
+#RewriteRule ^news\.php vremja_iinovacij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=58$
+#RewriteRule ^news\.php holodilnaja_ustanovka_alfa_laval_ac350eq_dq.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=57$
+#RewriteRule ^news\.php novyj_teploobmennik_dlja_vjazkih_zhidkostej.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=56$
+#RewriteRule ^news\.php m_line_novaja_linejka_plastinchatyh_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=55$
+#RewriteRule ^news\.php daimlerchrysler_vybiraet_alfa_laval_alfdex.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=54$
+#RewriteRule ^news\.php kompanija_alfa_laval_poluchila_novyj_zakaz_na_210_millionov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=53$
+#RewriteRule ^news\.php oman_vybiraet_teploobmenniki_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=52$
+#RewriteRule ^news\.php kompanija_alfa_laval_postavit_teploobmenniki_v_kuvejt.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=51$
+#RewriteRule ^news\.php kompanija_alfa_laval_poluchila_rekordnyj_po_stoimosti_zakaz.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=50$
+#RewriteRule ^news\.php kompanija_alfa_laval_poluchila_novyj_zakaz_na_postavku_teploobmennikov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=49$
+#RewriteRule ^news\.php alfa_laval_predlagaet_novoe_reshenie.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=47$
+#RewriteRule ^news\.php alfa_laval_poluchil_zakaz_na_60_millionov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=46$
+#RewriteRule ^news\.php luchshij_separator_dlja_kletok_mlekopitajuwih.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=48$
+#RewriteRule ^news\.php alfa_laval_iniciiroval_sudebnoe_razbiratelstvo.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=97$
+#RewriteRule ^news\.php alfa_laval_predstavila_modelnyj_rjad_innovacionnyh_skorostnyh_separatorov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=96$
+#RewriteRule ^news\.php kompanija_alfa_laval_vyigrala_tender.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=95$
+#RewriteRule ^news\.php alfa_laval_oformila_otmenu_vykuplennyh_akcij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=137$
+#RewriteRule ^news\.php sistema_scc_ot_alfa_laval_podarit_bezuprechnyj_aromat.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=138$
+#RewriteRule ^news\.php jenergosberegajuwie_meshalki_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=136$
+#RewriteRule ^news\.php sterilnaja_filtracija_ot_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=135$
+#RewriteRule ^news\.php alfa_laval_snizhenie_nagruzki_zagrjaznenij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=134$
+#RewriteRule ^news\.php alfa_laval_predstavljaet_proryv_v_oblasti_smesitelnyh_tehnologij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=133$
+#RewriteRule ^news\.php alfa_laval_sokrawaet_potreblenie_jenergii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=132$
+#RewriteRule ^news\.php nagrevanie_i_ohlazhdenie_napitkov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=131$
+#RewriteRule ^news\.php chistota_zalog_uspeha.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=130$
+#RewriteRule ^news\.php dlja_proizvodstva_bezalkogolnogo_piva.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=141$
+#RewriteRule ^news\.php alfa_laval_vyigrala_tender_na_postavku_oborudovanija_na_100_millionov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=140$
+#RewriteRule ^news\.php kompanija_alfa_laval_vyigrala_zakaz_na_130_millionov_shvedskih_kron.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=139$
+#RewriteRule ^news\.php otlichnoe_dopolnenie_k_linejke_aqua_ot_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=148$
+#RewriteRule ^news\.php kompanija_alfa_laval_poluchila_zakaz_ot_alzhira_na_60_millionov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=147$
+#RewriteRule ^news\.php kompanija_alfa_laval_poglotila_veduwego_postavwika_holodilnyh_agregatov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=158$
+#RewriteRule ^news\.php alfa_laval_pervyj_kvartal_2010_goda.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=157$
+#RewriteRule ^news\.php alfa_laval_na_rynke_asepticheskih_tehnologij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=156$
+#RewriteRule ^news\.php kompanija_alfa_laval_stala_vladelcem_odnogo_iz_krupnejshih_predprijatij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=155$
+#RewriteRule ^news\.php jekologichnye_innovacionnye_reshenija_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=154$
+#RewriteRule ^news\.php produkcija_alfa_laval_linejki_pureballast.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=153$
+#RewriteRule ^news\.php ezhegodnoe_sobranie_akcionerov_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=152$
+#RewriteRule ^news\.php samye_krupnye_teploobmenniki_alfa_laval.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=151$
+#RewriteRule ^news\.php alfa_laval_postavit_oborudovanie_dlja_nefteperegonnogo_zavoda.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=150$
+#RewriteRule ^news\.php kompanija_alfa_laval_poluchila_mnogomillionnyj_zakaz_v_malajzii.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=234$
+#RewriteRule ^news\.php teploobmenniki_alfa_laval_budut_ispolzovatsja_dlja_snizhenija_urovnja_uglekislogo_gaza.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=233$
+#RewriteRule ^news\.php teploobmenniki_alfa_laval_obwej_stoimostju_10_millionov_otpravilis_v_rossiju.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=232$
+#RewriteRule ^news\.php alfa_laval_group_stala_vladelcem_odnogo_iz_veduwih_predprijatij.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=231$
+#RewriteRule ^news\.php alfa_laval_postavit_oborudovanie_obwej_stoimostju_16_mln_dollarov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=230$
+#RewriteRule ^news\.php kompanija_alfa_laval_poluchila_zakaz_na_9_mln_dollarov.html? [L,R=301]
+#
+#RewriteCond %{QUERY_STRING} ^action=show_news&news_id=229$
+#RewriteRule ^news\.php krupnejshij_v_istorii_kompanii_kontrakt.html? [L,R=301]
+#
+#
+#
+## Fix Apache internal dummy connections from breaking [(site_url)] cache
+#RewriteCond %{HTTP_USER_AGENT} ^.*internal\ dummy\ connection.*$ [NC]
+#RewriteRule .* - [F,L]
+#
+## Exclude /assets and /manager directories and images from rewrite rules
+#RewriteRule ^(manager|assets)/*$ - [L]
+#RewriteRule \.(jpg|jpeg|png|gif|ico)$ - [L]

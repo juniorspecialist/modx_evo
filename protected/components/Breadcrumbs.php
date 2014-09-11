@@ -35,8 +35,11 @@ class Breadcrumbs {
     public function run(){
 
         $list = array();
+        $link = array();
 
         $model = $this->model;
+
+        $list[]= $model->menutitle;
 
         //максимально может быть не более 20ти уровней
         for($i=0;$i<10;$i++){
@@ -45,7 +48,8 @@ class Breadcrumbs {
             if(empty($parent->menutitle)){
                 break;
             }else{
-                $list[]=$parent->menutitle;
+                $list[]=$this->getMenuLink($parent->menutitle, $parent->alias);
+                //array_push($list, $this->getMenuLink($parent->menutitle, $parent->alias));
                 $model = $parent;
             }
             //$model = $parent;
@@ -55,7 +59,22 @@ class Breadcrumbs {
 
         $list = array_reverse($list);
 
+//        $reslt = array();
+//
+//        foreach($list as $url){
+//            $reslt[] = Yii::app()->controller->createUrl('/site/index', array('alias'=>$url));
+//        }
+
         return implode('»',$list);
+    }
+
+    /*
+     * формируем ссылку в меню хлебных крошек
+     * $title - название ссылки
+     * $alias - адрес который будет в ссылке
+     */
+    public function getMenuLink($title, $alias){
+        return CHtml::link($title, Yii::app()->controller->createUrl('/site/index', array('alias'=>$alias)));
     }
 
     /*

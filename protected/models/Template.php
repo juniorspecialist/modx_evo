@@ -25,7 +25,7 @@ class Template extends EMongoDocument {
     public $tv = array();
 
     function collectionName(){
-        return 'template';
+        return 'Template';
     }
 
     public static function model($className=__CLASS__){

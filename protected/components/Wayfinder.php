@@ -44,7 +44,6 @@ class Wayfinder extends  Ditto{
             }
         }
         $this->action();
-        //echo '<pre>'; print_r($this);die();
     }
 
     /*
@@ -57,24 +56,51 @@ class Wayfinder extends  Ditto{
 
         //применим список ID доков по которым будем делать поиск контента
         $criteria = new EMongoCriteria();
+        $criteria->condition = array('menutitle' => array('$gt' => ''));
         $criteria->addCondition('parent',$this->startId);
-        //$criteria->addOrCondition($condition);
+        //$criteria->addCondition('hidemenu',0);//'hidemenu' => '0'
+        //'condition' => array('deleted' => array('$ne' => 1)),
+
+
+        //echo 'startId='.$this->startId.'<br>';
+
+
         if(!empty($this->sortBy)){
+            $criteria->sort = array($this->sortBy=> 'asc');
             if(empty($this->sortDir)){
-                $criteria->setSort(array($this->sortBy, '1'));
+                //$criteria->setSort(array($this->sortBy, '1'));
+
             }else{
-                $criteria->setSort(array($this->sortBy, '-1'));
+                //$criteria->setSort(array($this->sortBy, '-1'));
+
             }
+        }else{
+            $criteria->sort = array('menuindex'=> 'asc');
         }
+
+        //$criteria->sort = array('menuindex'=> 'asc','menutitle'=>'asc');
+        //$criteria->sort = array('menutitle'=>'asc');
 
         $find = Content::model()->find($criteria);
 
         $this->result = '<ul class="'.$this->outerClass.'">';
-        //var_dump($find); die();
+
         foreach($find as $model) {
             //<a href="/portfolio.html" title="Наши клиенты">Клиенты</a>.
-            $this->result.='<li>'.CHtml::link($model->menutitle,'?r=site/index&alias='.$model->alias, array('title'=>$model->pagetitle)).'</li>';
+            //http://modx/[(site_url)]?r=site/index&alias=produkcija_bofill
+            $class = '';// class="active"
+
+            //выделим текущую страницу в списке меню
+            if(YiiBase::app()->request->url==Yii::app()->controller->createUrl('/site/index', array('alias'=>$model->alias))){
+                $class = 'class="active" ';
+            }elseif($model->id==$this->model->parent){//выделим родительскую страницу в меню
+                $class = 'class="active" ';
+            }
+
+            $this->result.='<li '.$class.' >'.CHtml::link($model->menutitle,Yii::app()->controller->createUrl('/site/index', array('alias'=>$model->alias)), array('title'=>$model->pagetitle)).'</li>';
         }
         $this->result.= '</ul>';
+
+        //echo 'result='.$this->result.'<br>';
     }
 }

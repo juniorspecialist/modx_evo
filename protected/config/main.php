@@ -17,15 +17,34 @@ return array(
     'defaultController' => 'site/index',
 	// autoloading model and component classes
 	'import'=>array(
-		'application.models.*',
-		'application.components.*',
+        'application.models.*',
+        'application.components.*',
+        'application.extensions.*',
         'application.extensions.MongoYii.*',
         'application.extensions.MongoYii.validators.*',
         'application.extensions.MongoYii.behaviors.*',
-        'application.extensions.MongoYii.util.*'
+        'application.extensions.MongoYii.util.*',
+        'bootstrap.widgets.*',
+        'bootstrap.helpers.TbHtml',
+        'bootstrap.helpers.TbArray',
+        'bootstrap.behaviors.TbWidget',
 	),
 
+    // path aliases
+    'aliases' => array(
+        'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), // change this if necessary
+    ),
+
 	'modules'=>array(
+
+        //админка
+        'manager' => array(
+            'defaultController' => 'login',
+        ),
+
+        'bootstrap' => array(
+            'class' => 'bootstrap.components.TbApi',
+        ),
 		// uncomment the following to enable the Gii tool
 		/*
 		'gii'=>array(
@@ -39,6 +58,10 @@ return array(
 
 	// application components
 	'components'=>array(
+
+        'bootstrap' => array(
+            'class' => 'bootstrap.components.TbApi',
+        ),
 
         // установим некоторые значения - по умолчанию
         'widgetFactory'=>array(
@@ -89,11 +112,16 @@ return array(
         'urlManager'=>array(
             'urlFormat'=>'path',
             'rules'=>array(
+
+                //array('class'=>'PageUrlRule'),'<controller:(site)\w+>' => '<controller>/index', 'urlSuffix' => '.html',
+                // стандартное правило для обработки '/' как 'site/index'
+                //'' => 'site/index',
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
             ),
             'showScriptName'=>false,
+            //'useStrictParsing' => true,
         ),
             /*
 		'db'=>array(
@@ -101,14 +129,14 @@ return array(
 		),*/
 		// uncomment the following to use a MySQL database
 
-            /*
+
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=theservice',
+			'connectionString' => 'mysql:host=localhost;dbname=theservice_1',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => 'root',
 			'charset' => 'utf8',
-		),*/
+		),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

@@ -79,7 +79,19 @@ class ImportFromMysql{
             $content->publishedon = $row['publishedon'];
             $content->menutitle = $row['menutitle'];
             $content->hidemenu = $row['hidemenu'];
-            $content->parent = $row['parent'];
+            //если PARENT=0, привяжим его к первому уровню, для построения корректного дерева
+            if($row['id']==1){
+                //укажим начало ДЕРЕВА(главное звено)
+                $content->parent = '0';
+            }else{
+                //если не указана подвязка, то подвязываем к самому первому элементу дерева
+                if($row['parent']==0){
+                    $content->parent = 1;
+                }else{
+                    $content->parent = $row['parent'];
+                }
+            }
+
 
 
             //получаем список тв-параметров по документу+названия этих тв-параметров
@@ -90,13 +102,16 @@ class ImportFromMysql{
                 foreach($tvs as $tv){
                     //получаем по каждому тв-параметру его название
                     $tv_name_row = YiiBase::app()->db->createCommand('SELECT name FROM modx_site_tmplvars WHERE id="'.$tv['tmplvarid'].'"')->queryRow();
-                    $tv_params[$tv_name_row['name']] = $tv['value'];
+                    if(!empty($tv_name_row['name'])){
+                        $tv_params[$tv_name_row['name']] = $tv['value'];
+                    }
                 }
             }
             $content->tv = $tv_params;
 
             if($content->validate()){
                 $content->save();
+                //echo 'save<br>';
             }else{
                 echo '<pre>'; print_r($content->getErrors());die();
             }

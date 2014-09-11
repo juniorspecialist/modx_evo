@@ -29,16 +29,24 @@ class Parser {
         $this->html = $template;
     }
 
-    public function issetParseData(){
+    /*
+     * проверяем есть ли вызовы тегов - сниппеты, чанки,тв-параметры
+     * находим вызовы и заменяем их значениями
+     */
+    public function issetParseData($debug = false){
 
         $isset = false;
 
         //проверим надо ли ещё раз запускать
-        if (preg_match('~{{(.*?)}}~', $this->html)) {$isset = true;}
+        if (preg_match('~{{(.*?)}}~', $this->html, $find)) {$isset = true;}
 
-        //if(preg_match('~\[(\[|\!)(.*?)(\!|\])\]~ms', $this->html)){$isset = true;}
+        if(preg_match('~\[(\[|\!)(.*?)(\!|\])\]~ms', $this->html, $find)){$isset = true;}
 
-        //if (preg_match('~\[\*(.*?)\*\]~', $this->html)) {$isset = true;}
+        //if (preg_match('~\[\*(.*?)\*\]~ms', $this->html, $find)) {$isset = true;}
+
+        //if (preg_match('/\[\+(.*)\+\]/', $this->html, $find)) {$isset = true;}
+        //[+phx:if=`[+artikul+]`:is=``:then=`CF 124 CSE`:else=`CF [+artikul+]`+]
+        //if(preg_match('/\[\+(phx):(.*):(.*)\+\]/i',$this->html, $find)){  $isset = true;}
 
         return $isset;
     }
@@ -62,49 +70,16 @@ class Parser {
      */
     public function parseSnippet(){
 
-        $this->phxSnippet();
-
-        //$this->html = preg_replace('~\[\[(.*?)\]\]~', '', $this->html);
-        //$this->html = preg_replace('~\[\!(.*?)\!\]~', '', $this->html);
-        preg_match_all('~\[(\[|\!)(.*?)(\!|\])\]~ms', $this->html, $matches);
-
-        //$matches[2]-список вызовов всех сниппетов на странице(выхов без скобочек)
-        //$matches[0]-вызов сниппета как в тексте страницы, используем его для замены на результат работы сниппета
-        //echo '<pre>'; print_r($matches[2]);die();
+         preg_match_all('/\[(\[|\!|\+phx)(.*?)(\!|`\+|\])\]/mis', $this->html, $matches);
 
         $matches_main = array();
         $replace = array();
-        foreach($matches[2] as $index=>$snippet){
+        foreach($matches[0] as $index=>$snippet){
 
-            //ищем вызов сниппет
-            if(preg_match('/(\W|^)Ditto(\W|$)/',$snippet)){
-                $ditto = new Ditto($this->model, $snippet);
-                //разбираем параметры вызова сниппета - Дитто
-                $ditto->parseString();
-                //запишим на страницу результат работы сниппета
-                //$this->html = str_replace($matches[0][$index], $ditto->result, $this->html);
-                $matches_main[] = $matches[0][$index];
-                $replace[] = $ditto->result;
-            }
-            // ищем вызов сниппета - Wayfinder
-
-            if(preg_match('/(\W|^)Wayfinder(\W|$)/',$snippet)){
-                $wayfinder = new Wayfinder($this->model, $snippet);
-                //разбираем параметры вызова сниппета - Wayfinder
-                $wayfinder->parseString();
-                //запишим на страницу результат работы сниппета
-                //$this->html = str_replace($matches[0][$index], $wayfinder->result, $this->html);
-                $matches_main[] = $matches[0][$index];
-                $replace[] = $wayfinder->result;
-            }
-
-            //нашли вызов сниппета - Хлебные крошки
-            if(preg_match('/(\W|^)Breadcrumbs(\W|$)/i',$snippet)){
-                $breadcrumbs = new Breadcrumbs($this->model);
-                $matches_main[] = $matches[0][$index];
-                $replace[] = $breadcrumbs->run();
-            }
+            $replace[] = Parser::mergeSnippet($snippet, $this->model);//
+            $matches_main[] = $matches[0][$index];
         }
+
 
         $this->html = str_replace($matches_main, $replace, $this->html);
 
@@ -112,79 +87,86 @@ class Parser {
         unset($replace);
     }
 
-
     /*
-     * парсим код страницы на предмет вызова сниппета Phx
-     * он всегда отрабатывает первым среди всех сниппетов
+     * определяем вызов сниппета и запускаем его выполнение
+     * определяем какой сниппет был вызван и потом запускаем сниппет на выполнение
+     * $html - строка содержит вызов сниппета, определяем его вызов и что за сниппет
      */
-    public function phxSnippet(){
+    static function mergeSnippet($html, $model){
 
-        if(preg_match_all('/\[\+(.*?):(.*?)\+\]/',$this->html,$matches)){
-            //echo '<pre>'; print_r($matches);
-            //echo '<pre>'; print_r($replace);
-            //die();
-            $find = array();
-            $replace = array();
+        $replace = '';//результат работы сниппета
 
-            foreach($matches[0] as $index=>$stringCall){
+        //ищем вызов сниппет
+        if(preg_match('/(\W|^)Ditto(\W|$)/',$html)){
+            $ditto = new Ditto($model, $html);
+            //разбираем параметры вызова сниппета - Дитто
+            $ditto->parseString();
+            //запишим на страницу результат работы сниппета
+            $replace = $ditto->result;
+        }
+        // ищем вызов сниппета - Wayfinder
 
-                echo $stringCall.'<br>';
-
-                $find[] = $stringCall;
-                $phx = new Phx($this->model,$stringCall);
-                $phx->html = $this->html;
-                $phx->action();
-                $replace[] =  $phx->result;
-
-            }
-            //echo '<pre>'; print_r($matches[1]);
-            //echo '<pre>'; print_r($replace);
-            die();
-
-            $this->html = str_replace($find, $replace, $this->html);
-            unset($find); unset($replace);
+        if(preg_match('/(\W|^)Wayfinder(\W|$)/',$html)){
+            $wayfinder = new Wayfinder($model, $html);
+            //разбираем параметры вызова сниппета - Wayfinder
+            $wayfinder->parseString();
+            //запишим на страницу результат работы сниппета
+            $replace = $wayfinder->result;
         }
 
-        //find Phx snippet
-        //if(preg_match_all('/\[\+phx:(.*?)\+\]/',$this->html,$matches)){
+        //нашли вызов сниппета - Хлебные крошки
+        if(preg_match('/(\W|^)Breadcrumbs(\W|$)/i',$html)){
+            $breadcrumbs = new Breadcrumbs($model);
+            //$matches_main[] = $matches[0][$index];
+            $replace = $breadcrumbs->run();
+        }
 
-        //}
+        //нашли вызов сниппета - PHX
+        if(preg_match('/(.*?):(.*?)/',$html)){
+            $phx = new Phx($model,$html);
+            $phx->html = $html;
+            $phx->action();
+            $replace =  $phx->result;
+        }
 
-        //die();
+        return $replace;//возвращаем результат работы сниппета
     }
-
-    /*
-     * проверяем строку на вызов сниппета,чанка,
-     */
-
 
     /*
      * проставляем мета-теги, заголовок страницы, ключевые слова и т.д.
      */
     public function parseMetaTagsPage(){
         //[*pagetitle*]
-        if (preg_match_all('~\[\*(.*?)\*\]~', $this->html, $matches)) {
-            //echo '<pre>'; print_r($matches);
-            foreach($matches[1] as $param){
+
+
+        if (preg_match_all('~\[(\*|\+)(.*?)(\*|\+)\]~', $this->html, $matches)) {
+           // echo '<pre>'; print_r($matches);
+            foreach($matches[2] as $param){
                 //заменяем вызов чанка его содержимым
                 if(!empty($this->model->{$param})){
-                    $this->html = str_replace('[*'.$param.'*]', $this->model->{$param}, $this->html);
+                    $this->html = str_replace(array('[*'.$param.'*]', '[+'.$param.'+]'), $this->model->{$param}, $this->html);
                 }else{
                     if(!empty($this->model->tv[$param])){
-                        $this->html = str_replace('[*'.$param.'*]', $this->model->tv[$param], $this->html);
+                        $this->html = str_replace(array('[*'.$param.'*]', '[+'.$param.'+]'), $this->model->tv[$param], $this->html);
                     }else{
-                        $this->html = str_replace('[*'.$param.'*]', '', $this->html);
+                        //$this->html = str_replace(array('[*'.$param.'*]', '[+'.$param.'+]'), '', $this->html);
                     }
                 }
             }
         }
+
+        //заглушка - заменяем значения некоторых параметров
+        $this->html = str_replace('<base href="[(site_url)]" />', '<base href="'.YiiBase::app()->createAbsoluteUrl('').'/" />', $this->html);
+        $this->html = str_replace('[*canonical*]', '', $this->html);
     }
 
     /*
      * поиск вызова чанков в коде
      */
     public function parseChunk(){
-        $replace= array ();
+
+        $replace = array ();
+
         $matches_main= array ();
 
         if (preg_match_all('~{{(.*?)}}~', $this->html, $matches)) {
@@ -193,10 +175,12 @@ class Parser {
                 //заменяем вызов чанка его содержимым
                 $matches_main[] = '{{'.$title_chunk.'}}';
                 $replace[] = Chunk::findChunkByName($title_chunk);
-                //$this->html = str_replace('{{'.$title_chunk.'}}', Chunk::findChunkByName($title_chunk), $this->html);
             }
 
+            //вызов чанков заменяем их значениями
             $this->html = str_replace($matches_main, $replace, $this->html);
+
+
             unset($matches_main);unset($replace);
         }
     }
@@ -206,9 +190,11 @@ class Parser {
      */
     static function mergeTvParamsContent($html, $model){
 
+
         if (preg_match_all('~\[(\*|\+)(.*?)(\*|\+)\]~', $html, $matches)) {
             //echo '<pre>'; print_r($matches);die();
             foreach($matches[2] as $param){
+
                 //заменяем вызов чанка его содержимым
                 if(!empty($model->{$param})){
                     $html = str_replace(array('[*'.$param.'*]', '[+'.$param.'+]'), $model->{$param}, $html);
@@ -216,15 +202,20 @@ class Parser {
                     if(!empty($model->tv[$param])){
                        $html = str_replace(array('[*'.$param.'*]', '[+'.$param.'+]'), $model->tv[$param], $html);
                     }else{
-                      $html = str_replace(array('[*'.$param.'*]', '[+'.$param.'+]'), '', $html);
+                      //$html = str_replace(array('[*'.$param.'*]', '[+'.$param.'+]'), '', $html);
                     }
                 }
 
                 //$this->html = str_replace('[*'.$param.'*]', $this->model->tv->{$param}, $this->html);
             }
+
             //заглушка - замена ссылок - [~18~]
-            $html = str_replace('[~'.$model->id.'~]', '/?r=site/index&alias='.$model->alias, $html);
+            $html = str_replace('[~'.$model->id.'~]', Yii::app()->controller->createUrl('/site/index', array('alias'=>$model->alias)) , $html);
+
+
         }
+
+        $html = str_replace('[+url+]', YiiBase::app()->controller->createAbsoluteUrl('/site/index', array('alias'=>$model->alias)) , $html);
 
         return $html;
     }
@@ -242,52 +233,4 @@ class Parser {
 
         return $html;
     }
-
-    /**
-     * name: parseDocumentSource - used by parser
-     * desc: return document source aftering parsing tvs, snippets, chunks, etc.
-     */
-    /*
-    function parseDocumentSource($source) {
-        // set the number of times we are to parse the document source
-        $this->minParserPasses= empty ($this->minParserPasses) ? 2 : $this->minParserPasses;
-        $this->maxParserPasses= empty ($this->maxParserPasses) ? 10 : $this->maxParserPasses;
-        $passes= $this->minParserPasses;
-        for ($i= 0; $i < $passes; $i++) {
-            // get source length if this is the final pass
-            if ($i == ($passes -1))
-                $st= strlen($source);
-            if ($this->dumpSnippets == 1) {
-                echo "<fieldset><legend><b style='color: #821517;'>PARSE PASS " . ($i +1) . "</b></legend>The following snippets (if any) were parsed during this pass.<div style='width:100%' align='center'>";
-            }
-
-            // invoke OnParseDocument event
-            $this->documentOutput= $source; // store source code so plugins can
-            $this->invokeEvent("OnParseDocument"); // work on it via $modx->documentOutput
-            $source= $this->documentOutput;
-
-            // combine template and document variables
-            $source= $this->mergeDocumentContent($source);
-            // replace settings referenced in document
-            $source= $this->mergeSettingsContent($source);
-            // replace HTMLSnippets in document
-            $source= $this->mergeChunkContent($source);
-            // insert META tags & keywords
-            $source= $this->mergeDocumentMETATags($source);
-            // find and merge snippets
-            $source= $this->evalSnippets($source);
-            // find and replace Placeholders (must be parsed last) - Added by Raymond
-            $source= $this->mergePlaceholderContent($source);
-            if ($this->dumpSnippets == 1) {
-                echo "</div></fieldset><br />";
-            }
-            if ($i == ($passes -1) && $i < ($this->maxParserPasses - 1)) {
-                // check if source length was changed
-                $et= strlen($source);
-                if ($st != $et)
-                    $passes++; // if content change then increase passes because
-            } // we have not yet reached maxParserPasses
-        }
-        return $source;
-    }*/
 } 
