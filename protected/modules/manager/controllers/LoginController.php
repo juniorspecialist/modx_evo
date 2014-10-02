@@ -6,11 +6,20 @@
  * Time: 11:53
  */
 
-class LoginController extends Controller{
+class LoginController extends AdminController{
 
-    public $layout='//layouts/column_admin';
+    public $defaultAction = 'login';
 
-    public function actionIndex(){
+    public function actionLogin(){
+
+        if(Yii::app()->user->isGuest){
+            //$this->redirect('/manager/login');
+            //$this->redirect(Yii::app()->controller->module->loginUrl);
+        }else{
+            //$this->redirect('/user/profile');
+            $this->redirect(Yii::app()->controller->module->returnUrl);
+        }
+
         $model=new LoginForm;
 
         // if it is ajax validation request
@@ -34,5 +43,17 @@ class LoginController extends Controller{
         // display the login form
         $this->render('login',array('model'=>$model));
     }
+
+
+    /**
+     * Logout the current user and redirect to returnLogoutUrl.
+     */
+    public function actionLogout()
+    {
+        Yii::app()->user->logout();
+        //$this->refresh();
+        $this->redirect(Yii::app()->controller->module->returnLogoutUrl);
+    }
+
 
 } 

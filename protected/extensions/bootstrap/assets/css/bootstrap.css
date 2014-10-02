@@ -1071,6 +1071,9 @@ textarea {
 label {
   display: block;
   margin-bottom: 5px;
+    float: left;
+    width: 250px;
+    border: 1px solid red;
 }
 
 select,
@@ -1106,7 +1109,7 @@ input[type="color"],
 input,
 textarea,
 .uneditable-input {
-  width: 206px;
+  width: 306px;
 }
 
 textarea {

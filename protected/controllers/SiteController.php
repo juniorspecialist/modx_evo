@@ -2,7 +2,7 @@
 class SiteController extends Controller
 {
 
-    //public $layout='//layouts/column_modx';
+    public $layout='//layouts/column_admin';
 
 
     /*
@@ -42,24 +42,19 @@ class SiteController extends Controller
 	public function actionIndex()
 	{
 
-        $id = (int) Yii::app()->request->getParam('id');
+        $id = Yii::app()->request->getParam('id');
 
-
-        if(!isset($id)){
+        if(empty($id)){
             throw new CHttpException(404,'The requested page does not exist.');
         }
 
-        $criteria = new EMongoCriteria(array(
-            'condition' => array('id'=>$_GET['id']),
-        ));
+        $model = Content::model()->findOne(array('_id'=>$id));
 
-        $model = Content::model()->findOne($criteria);
-
-        if($model==null){
-            throw new CHttpException(404,'The requested page does not exist.');
-        }
-
-        $parser = new Parser($model->tpl->content,$model);
+        $parser = new Parser(
+            $model->tpl->content
+            ,
+            $model
+        );
         $parser->run();
 
 
@@ -72,7 +67,8 @@ class SiteController extends Controller
     public function actionImport(){
         $import = new ImportFromMysql();
         $import->import();
-        $this->render('index');
+        die('Import complete');
+        //$this->render('index');
     }
 
 	/**
@@ -84,8 +80,17 @@ class SiteController extends Controller
 		{
 			if(Yii::app()->request->isAjaxRequest)
 				echo $error['message'];
-			else
-				$this->render('error', $error);
+			else{
+                ///из настроек системы находим документ, который будет выводится в 404 ошибке
+                $model = Content::model()->findOne(array('_id'=>(int)Yii::app()->config->get('SYSTEM.NOT_FIND_PAGE')));
+
+                $parser = new Parser($model->tpl->content,$model);
+                $parser->run();
+
+                $this->render('index',array('content'=>$parser->html));
+            }
+
+				//$this->render('error', $error);
 		}
 	}
 

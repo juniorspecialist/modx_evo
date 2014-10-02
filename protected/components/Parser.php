@@ -76,6 +76,8 @@ class Parser {
         $replace = array();
         foreach($matches[0] as $index=>$snippet){
 
+            echo $snippet.'<br>';
+
             $replace[] = Parser::mergeSnippet($snippet, $this->model);//
             $matches_main[] = $matches[0][$index];
         }
@@ -128,6 +130,14 @@ class Parser {
             $phx->action();
             $replace =  $phx->result;
         }
+        //вызов сниппета(TvTagCloud) - для тегирования по тв-параметру
+//        if(preg_match('/(\W|^)TvTagCloud(\W|$)/i',$html)){
+//            $tv_tag = new TvTagCloud($model,$html);
+//            $tv_tag->html = $html;
+//            $tv_tag->action();
+//            $replace =  $tv_tag->result;
+//        }
+
 
         return $replace;//возвращаем результат работы сниппета
     }

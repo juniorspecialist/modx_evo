@@ -11,7 +11,9 @@
  *  вывод списка доков в виде дерева
  *  добавление,редактирвоание доков, удаление, поиск, просмотр
  */
-class TreeController extends Controller {
+class TreeController extends AdminController {
+
+    public $layout='//layouts/column_admin_tree';
 
     public function actions()
     {
@@ -22,9 +24,15 @@ class TreeController extends Controller {
                 'showRoot'=>false
             ),
 
+            'mainTree'=>array(
+                'class'=>'ext.actions.MainTreeAction',
+                'modelName'=>'Content',
+                //'showRoot'=>false
+            ),
+
             'treePath'=>array(
                 'class'=>'ext.actions.XAjaxEchoAction',
-                'modelName'=>'Menu',
+                'modelName'=>'Content',
                 'attributeName'=>'pathText',
             ),
         );
@@ -36,13 +44,15 @@ class TreeController extends Controller {
      */
     public function actionIndex(){
 
+        $this->render('tree');
+
     }
 
     /*
      * построение дерева
      */
     public function actionTree(){
-
+        $this->renderPartial('_tree');
     }
 
 } 

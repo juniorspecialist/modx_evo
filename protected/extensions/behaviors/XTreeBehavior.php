@@ -115,7 +115,7 @@ class XTreeBehavior extends CActiveRecordBehavior
     /**
      * @var string the attribute name of tree node id
      */
-    public $id='id';
+    public $id='_id';
     /**
      * @var string the attribute name of tree node parent id
      */
@@ -431,6 +431,7 @@ class XTreeBehavior extends CActiveRecordBehavior
     /**
      * This is invoked before the record is saved.
      */
+    /*
     public function beforeSave($event)
     {
         $owner=$this->getOwner();
@@ -464,7 +465,7 @@ class XTreeBehavior extends CActiveRecordBehavior
                 }
             }
         }
-    }
+    }*/
 
     /**
      * @return subarray of items for CMenu widget
@@ -582,7 +583,7 @@ class XTreeBehavior extends CActiveRecordBehavior
             $url='#';
 
         return array(
-            'text'=>CHtml::link($label, $url, array('id'=>$model->getAttribute($this->id))),
+            'text'=>CHtml::link($label, $url, array('id'=>$model->getAttribute($this->id), 'target'=>'main')),
             'id'=>$model->getAttribute($this->id),
             'hasChildren'=>$model->childCount==0 ? false : true,
 

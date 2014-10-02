@@ -11,25 +11,27 @@ class PageUrlRule extends CBaseUrlRule
     public function parseUrl($manager, $request, $pathInfo, $rawPathInfo)
     {
 
+        if(!preg_match('#manager#i', $pathInfo)){
+            if (preg_match('#^([\w-]+)#i', $pathInfo, $matches)) {
 
-        if (preg_match('#^([\w-]+)#i', $pathInfo, $matches)) {
+                $criteria = new EMongoCriteria(array(
+                    'condition' => array('alias'=>$matches[1]),
+                ));
+                $page = Content::model()->findOne($criteria);
 
-            $criteria = new EMongoCriteria(array(
-                'condition' => array('alias'=>$matches[1]),
-            ));
-            $page = Content::model()->findOne($criteria);
+                if ($page !== null) {
+                    $_GET['id'] = $page->_id;
+                    return 'site/index';
+                }else{
 
-            if ($page !== null) {
-                $_GET['id'] = $page->getPrimaryKey();
-                return 'site/index';
+                }
             }else{
-
+                $_GET['id'] = (int) Yii::app()->config->get('SYSTEM.MAIN_PAGE');;
+                return 'site/index';
             }
         }else{
-            $_GET['id'] = 1;
-            return 'site/index';
+           return false;
         }
-        return false;
     }
 
     public function createUrl($manager, $route, $params, $ampersand)
@@ -43,10 +45,22 @@ class PageUrlRule extends CBaseUrlRule
                 ));
                 $page = Content::model()->findOne($criteria);
 
-                return $page->alias.'.html';
+                if(!empty($page->alias)){
+                    return $page->alias.'.html';
+                }else{
+                    return '';
+                }
+
 
             }elseif(!empty($params['alias'])){
-                return $params['alias'].'.html';
+
+                if(!empty($params['alias'])){
+                    return $params['alias'].'.html';
+                }else{
+                    return '';
+                }
+
+
             }
         }
         return false;

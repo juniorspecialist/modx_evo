@@ -7,10 +7,10 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Modx EVO',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log', 'config','debug',),
     // язык поумолчанию
     'sourceLanguage' => 'en_US',
     'language' => 'ru',
@@ -18,8 +18,10 @@ return array(
 	// autoloading model and component classes
 	'import'=>array(
         'application.models.*',
+        'application.modules.manager.controllers.*',
         'application.components.*',
         'application.extensions.*',
+        'application.extensions.redactor.*',
         'application.extensions.MongoYii.*',
         'application.extensions.MongoYii.validators.*',
         'application.extensions.MongoYii.behaviors.*',
@@ -46,14 +48,14 @@ return array(
             'class' => 'bootstrap.components.TbApi',
         ),
 		// uncomment the following to enable the Gii tool
-		/*
+
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'1',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+
 	),
 
 	// application components
@@ -61,6 +63,12 @@ return array(
 
         'bootstrap' => array(
             'class' => 'bootstrap.components.TbApi',
+        ),
+
+
+        'config'=>array(
+            'class'=>'Settings',
+            'cache'=>3600,
         ),
 
         // установим некоторые значения - по умолчанию
@@ -75,37 +83,52 @@ return array(
                 'CJuiDatePicker'=>array(
                     'language'=>'ru',
                 ),
+
+
             ),
         ),
-
 
 //        'cache'=>array(
-//            'class'=>'system.caching.CFileCache',
+//            'class'=>'CMemCache',
+//            'useMemcached'=>true,
+//            'servers'=>array(
+//                array(
+//                    'host'=>'localhost',
+//                    'port'=>11211,
+//                    'weight'=>60,
+//                ),
+//            ),
 //        ),
 
-
-        'cache'=>array(
-            'class'=>'CMemCache',
-            'useMemcached'=>true,
-            'servers'=>array(
-                array(
-                    'host'=>'localhost',
-                    'port'=>11211,
-                    'weight'=>60,
-                ),
-            ),
+        'cache' => array(
+            'class' => 'system.caching.CFileCache'
         ),
+
+//        'debug' => array(
+//            'class' => 'ext.yii2-debug.Yii2Debug',
+//            'panels' => array(
+//                'db' => array(
+//                    // Disable code highlighting.
+//                    'highlightCode' => false,
+//                    // Disable substitution of placeholders with values in SQL queries.
+//                    'insertParamValues' => false,
+//                ),
+//            ),
+//        ),
 
         'mongodb' => array(
             'class' => 'EMongoClient',
             'server' => 'mongodb://localhost:27017',
             'db' => 'modx',
+            //'mongoConnectionId' => 'mongodb',
             'enableProfiling'=>true,
         ),
 
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+            'loginUrl'=>array('/manager/login/login')
+
 		),
 		// uncomment the following to enable URLs in path-format
 
@@ -113,9 +136,16 @@ return array(
             'urlFormat'=>'path',
             'rules'=>array(
 
-                //array('class'=>'PageUrlRule'),'<controller:(site)\w+>' => '<controller>/index', 'urlSuffix' => '.html',
+
+//                '<module:\w+>/<controller:\w+>/<action:\w+>/<id:\d+>' => '<module>/<controller>/<action>/<id>',
+//                '<module:\w+>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
+
                 // стандартное правило для обработки '/' как 'site/index'
-                //'' => 'site/index',
+//                array('class'=>'PageUrlRule'),'<controller:(site)\w+>' => '<controller>/index', 'urlSuffix' => '.html',
+//                '' => 'site/index',
+
+
+
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -150,8 +180,9 @@ return array(
 					'levels'=>'error, warning',
 				),
 
-				// uncomment the following to show log messages on web pages
 
+				// uncomment the following to show log messages on web pages
+//
 //				array(
 //					'class'=>'CWebLogRoute',
 //				),

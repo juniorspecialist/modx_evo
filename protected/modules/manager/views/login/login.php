@@ -48,27 +48,65 @@ $this->breadcrumbs=array(
 	</div>
 
 <?php $this->endWidget(); ?>
-    <div id="treecontrol" style="display: none;">
-        <a href="#">Collapse All</a> |
-        <a href="#">Expand All</a>
-    </div>
-    <?php
-
-
-    $this->widget('CTreeView',array(
-        'id'=>'menu-treeview',
-        'url'=>array('tree/fillTree'),
-        //'data'=>$dataTree,
-        //'control'=>'#treecontrol',
-        //'animated'=>'fast',
-        'collapsed'=>true,
-        'unique'=>false,
-        'persist'=>'cookie',
-        'htmlOptions'=>array(
-            'class'=>'filetree'
-        )
-    ));
-
-    ?>
 
 </div><!-- form -->
+<?php
+
+
+// flush cache
+//YiiBase::app()->cache->delete('settings_');
+//
+//// add data to cache
+//Yii::app()->cache->set('apple', 'fruit');
+//Yii::app()->cache->set('onion', 'vegetables');
+//Yii::app()->cache->set(1, 'one');
+//Yii::app()->cache->set(2, 'two');
+//Yii::app()->cache->set('one', 1);
+//Yii::app()->cache->set('two', 2);
+//
+//// delete from cache
+//Yii::app()->cache->delete(1);
+//Yii::app()->cache->delete('two');
+//
+//// read from cache
+//echo Yii::app()->cache->get(2);
+
+
+//echo Yii::app()->config->get('BLOG.POSTS_PER_PAGE');
+
+//Yii::app()->config->add(array(
+//    'param'=>'SYSTEM.DEFAULT_TEMPLATE',
+//    'label'=>'Шаблон по умолчанию',
+//    'value'=>'92',
+//    'type'=>'dropdown',
+//    'default'=>'92',
+//));
+//
+////
+//Yii::app()->config->add(array(
+//    'param'=>'SYSTEM.ACCESS_DENY',
+//    'label'=>"Страница 'Доступ запрещен'",
+//    'value'=>'744',
+//    'type'=>'text',
+//    'default'=>'744',
+//));
+//
+//
+//Yii::app()->config->add(array(
+//    'param'=>'SYSTEM.NOT_FIND_PAGE',
+//    'label'=>"Страница ошибки '404'",
+//    'value'=>'744',
+//    'type'=>'text',
+//    'default'=>'744',
+//));
+
+//Yii::app()->config->add(array(
+//    'param'=>'SYSTEM.MAIN_PAGE',
+//    'label'=>"ID главной страницы",
+//    'value'=>'1',
+//    'type'=>'text',
+//    'default'=>'1',
+//));
+
+
+//echo Yii::app()->config->get('BLOG.POSTS_PER_PAGE1');

@@ -23,7 +23,7 @@ class XFillTreeAction extends CAction
      * @var int id of the node that is taken as root node.
      */
     //если указать null то не будет показываться самый верхний элемент, 0-отображаем вверхний элемент дерева
-    public $rootId='0';
+    public $rootId=0;
     /**
      * @var bool wether the root node should be displayed.
      */
@@ -41,7 +41,7 @@ class XFillTreeAction extends CAction
         }
         else
         {
-            $rootId=$_GET['root'];
+            $rootId=(int)$_GET['root'];
             $showRoot=false;
         }
 

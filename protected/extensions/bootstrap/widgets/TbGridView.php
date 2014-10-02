@@ -22,6 +22,10 @@ class TbGridView extends CGridView
      */
     public $type;
     /**
+     * @var string the CSS class name for the pager container. Defaults to 'pagination'.
+     */
+    public $pagerCssClass = 'pagination';
+    /**
      * @var array the configuration for the pager.
      * Defaults to <code>array('class'=>'ext.bootstrap.widgets.TbPager')</code>.
      */

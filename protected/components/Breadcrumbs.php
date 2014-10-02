@@ -24,7 +24,7 @@ class Breadcrumbs {
     public function getParent($parent_id){
         //применим список ID доков по которым будем делать поиск контента
         $criteria = new EMongoCriteria();
-        $criteria->addCondition('id',$parent_id);
+        $criteria->addCondition('_id',$parent_id);
         $criteria->setLimit(1);
 
         $parent = Content::model()->findOne($criteria);
@@ -43,29 +43,29 @@ class Breadcrumbs {
 
         //максимально может быть не более 20ти уровней
         for($i=0;$i<10;$i++){
-            $parent = $this->getParent($model->parent);
+
+            if(empty($parent)){continue;}
             //var_dump($parent->parent);
             if(empty($parent->menutitle)){
-                break;
+                //break;
             }else{
+                if(empty($parent->menutitle)){
+                    continue;
+                }
+
                 $list[]=$this->getMenuLink($parent->menutitle, $parent->alias);
-                //array_push($list, $this->getMenuLink($parent->menutitle, $parent->alias));
+
                 $model = $parent;
             }
-            //$model = $parent;
-            //echo $model->menutitle.'<br>';
         }
-        //die();
 
         $list = array_reverse($list);
 
-//        $reslt = array();
-//
-//        foreach($list as $url){
-//            $reslt[] = Yii::app()->controller->createUrl('/site/index', array('alias'=>$url));
-//        }
-
-        return implode('»',$list);
+        if(count($list)==1){
+            return '';
+        }else{
+            return implode('»',$list);
+        }
     }
 
     /*

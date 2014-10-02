@@ -5,11 +5,8 @@
  * Date: 11.09.14
  * Time: 13:31
  */
+?>
 
-$this->widget('CTreeView',array(
-    'id'=>'unit-treeview',
-    'url'=>array('tree/tree'),
-    'htmlOptions'=>array(
-        'class'=>'treeview-red'
-    )
-));
+<div id="tree">
+    <?php $this->renderPartial('_tree');?>
+</div>

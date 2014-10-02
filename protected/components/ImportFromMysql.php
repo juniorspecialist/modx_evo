@@ -19,13 +19,35 @@ class ImportFromMysql{
 
     public function import(){
         //импортируем статьи
-        //$this->importContent();
+        $this->importContent();
 
         //импортируем список шаблонов системы+ подвязки по ним списка тв-параметров(1шаблон->много тв-параметров)
         //$this->importTemplate();
 
         // импортируем список чанков
         //$this->importChunk();
+
+        //импортируем список тв-параметров с их значениями
+        //$this->importTvParams();
+    }
+
+    /*
+     * импорт тв-параметров(списоких настройки и параметры)
+     */
+    public function importTvParams(){
+        $sql = 'SELECT * FROM modx_site_tmplvars';
+        $rows = YiiBase::app()->db->createCommand($sql)->queryAll();
+        foreach($rows as $row){
+            $tv = new Tv();
+            //$tv->id = (int)$row['id'];
+            $tv->type = $row['type'];
+            $tv->name = $row['name'];
+            $tv->caption = $row['caption'];
+            $tv->description = $row['description'];
+            $tv->elements = $row['elements'];
+            $tv->default_text = $row['default_text'];
+            $tv->save();
+        }
     }
 
     /*
@@ -59,7 +81,8 @@ class ImportFromMysql{
         foreach($iterator as $row){
 
             $content = new Content();
-            $content->id = $row['id'];
+            $content->_id = (int)$row['id'];
+            //$content->id = ()$row['id'];
             $content->contentType = $row['contentType'];
             $content->pagetitle = $row['pagetitle'];
             $content->description = $row['description'];
@@ -68,7 +91,7 @@ class ImportFromMysql{
             $content->pub_date = $row['pub_date'];
             $content->content = $row['content'];
             $content->isfolder = $row['isfolder'];
-            $content->template = $row['template'];
+            $content->template = (string)$row['template'];
             $content->menuindex = $row['menuindex'];
             $content->searchable = $row['searchable'];
             $content->cacheable = $row['cacheable'];
@@ -82,13 +105,13 @@ class ImportFromMysql{
             //если PARENT=0, привяжим его к первому уровню, для построения корректного дерева
             if($row['id']==1){
                 //укажим начало ДЕРЕВА(главное звено)
-                $content->parent = '0';
+                $content->parent = 0;
             }else{
                 //если не указана подвязка, то подвязываем к самому первому элементу дерева
                 if($row['parent']==0){
                     $content->parent = 1;
                 }else{
-                    $content->parent = $row['parent'];
+                    $content->parent = (int)$row['parent'];
                 }
             }
 
@@ -109,11 +132,18 @@ class ImportFromMysql{
             }
             $content->tv = $tv_params;
 
-            if($content->validate()){
-                $content->save();
-                //echo 'save<br>';
+            //echo '<pre>'; print_r($content);
+
+            //не валидируем данные, если записываем корень всей структуры - дерева
+            if($content->parent==0){
+                $content->save(false);
             }else{
-                echo '<pre>'; print_r($content->getErrors());die();
+                if($content->validate()){
+                    $content->save();
+                    //echo 'save<br>';die();
+                }else{
+                    //echo '<pre>'; print_r($content->getErrors());//die();
+                }
             }
         }
     }
@@ -132,7 +162,7 @@ class ImportFromMysql{
                 $tv_params_by_tpl = $db->createCommand('SELECT tmplvarid FROM modx_site_tmplvar_templates WHERE templateid="'.$tpl['id'].'"')->queryAll();
 
                 $template = new Template();
-                $template->id = $tpl['id'];
+                $template->_id = $tpl['id'];
                 $template->title = $tpl['templatename'];
                 $template->desc = $tpl['description'];
                 $template->content = $tpl['content'];
@@ -142,7 +172,7 @@ class ImportFromMysql{
                 foreach($tv_params_by_tpl as $tv_id){
                     //получаем по каждому тв-параметру его название
                     $tv_name_row = YiiBase::app()->db->createCommand('SELECT name FROM modx_site_tmplvars WHERE id="'.$tv_id['tmplvarid'].'"')->queryRow();
-                    $tv_params[] = $tv_name_row['name'];
+                    $tv_params[$tv_name_row['name']] = $tv_name_row['name'];
                 }
 
 
